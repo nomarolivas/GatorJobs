@@ -1,0 +1,329 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/styles/student.css">
+        <!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}"/> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+            integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+        </script>
+
+        <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    </head>
+
+    <body>
+        <div class="student-header">
+            <div class="header-buttons-class">
+                <div>
+                    <button type="button" class="btn pull-right head-btn" onclick="studentLogout()">Logout</button>       
+                </div>
+                <div>
+                    <button type="button" class="btn pull-right head-btn" data-toggle="modal" data-target="#filtermodal">Search</button>       
+                </div>
+                <div>
+                    <button type="button" class="btn pull-right head-btn alert-btn"  data-toggle="modal" data-target="#modal">Alerts</button>       
+                </div>
+            </div>
+            <div id="studentName" class="student-header-title">
+            </div>
+            <div id="objectives" class="student-header-subtitle">
+            </div>
+        </div>
+        <div class="admin-body">
+            <br />
+            <div>
+                <div class="students-result col-md-12">
+                    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="exampleModalLabel">You have these Job matches</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div id="alerts">
+
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="filtermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="exampleModalLabel">Search Jobs by Filtering</h4>
+                            </div>
+                            <div class="dropdown col-md-4">
+                                <select class="dropdown-menu-style" id="studDomainDropdown" style="height: 35px;border-radius: 5px;">
+                                    <option disabled selected>FILTER BY DOMAIN</option>
+                                    <option>Artificial Intelligence and Machine Learning</option>
+                                    <option>Robotic Process Automation (PA)</option>
+                                    <option>Edge Computing</option>
+                                    <option>Quantum Computing</option>
+                                    <option>Virtual Reality and Augmented Reality</option>
+                                    <option>Blockchain</option>
+                                    <option>Internet of Things (loT)</option>
+                                    <option>5G</option>
+                                    <option>Cyber Security</option>
+                                </select>
+                            </div>
+                            <div class="input-menu-style col-md-4">
+                                <input type="text" class="form-control" id="studSkills" aria-describedby="skills"
+                                    placeholder="FILTER BY SKILLS">
+                            </div>
+                            <div class="dropdown col-md-3">
+                                <select class="dropdown-menu-style" id="jobProfileDropdown"
+                                style="height: 35px;border-radius: 5px;">
+                                        <option selected disabled>FILTER BY JOB TITLE</option>
+                                    <option>Software Engineer</option>
+                                    <option>Accountant</option>
+                                    <option>Tester</option>
+                                    <option>Maintainence Engineer</option>
+                                    <option>Network Engineer</option>
+                                    <option>Data Scientist</option>
+                                </select>
+                            </div>
+                            <br /><br /><br /><br />
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary" onclick="searchJobs()">Search</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+
+                    <div class="student-list">
+                        <div class="student-title">
+                        </div>
+                        <br />
+                        
+                        <div id="studentAlertDetails" class="studentAlertDetails" style="display: none;">
+                            {{studentAlertDetails}}
+                        </div>
+                        <div id="studentDetails" class="studentDetails" style="display: none;">
+                            {{studentDetails}}
+                        </div>
+                        <button type="button" class="collapsible">Basic Information
+                            <b class="pull-right">+</b>
+                        </button>
+                        <div id="basic" class="content">
+                            <!-- <p><b>Address:</b> 123 Maple Dr. Apt 4567, San Jose, CA. </p>
+                            <p><b>Pin code:</b> 98765 </p>
+                            <p><b>Date of birth:</b> 01/01/1994 </p>
+                            <p><b>Links:</b> <a href="https://www.linkedin.com/">My LinkedIn profile</a> </p> -->
+                        </div>
+
+                        <div id="studentEducationDetails" class="studentEducationDetails" style="display: none;">
+                            {{studentEducationDetails}}
+                        </div>
+                        <button type="button" class="collapsible">Educational Qualifications
+                            <b class="pull-right">+</b>
+                        </button>
+                        <div id="education" class="content">
+                            <!-- <p><b>Degree: </b> MS in Computer Science </p>
+                            <p><b>GPA: </b> 3.5 </p>
+                            <p><b>Start Date:</b> 01/01/2021 </p>
+                            <p><b>End Date:</b> 01/01/2023 </p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p><b>Awards / Papers:</b> Lorem ipsum dolor sit amet </p> -->
+                        </div>
+
+                        <div id="studentCertificationDetails" class="studentCertificationDetails" style="display: none;">
+                            {{studentCertificationDetails}}
+                        </div>
+                        <button type="button" class="collapsible">Certifications
+                            <b class="pull-right">+</b>
+                        </button>
+                        <div id="certification" class="content">
+                            <!-- <p><b>Certification: </b> Advanced Java</p>
+                            <p><b>Awarding Body: </b> ABC </p>
+                            <p><b>Start Date:</b> 01/01/2022 </p>
+                            <p><b>End Date:</b> 03/01/2022 </p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
+                        </div>
+
+                        <button type="button" class="collapsible">Skills & Languages
+                            <b class="pull-right">+</b>
+                        </button>
+                        <div id="skills" class="content">
+                            <!-- <p><b>Skills: </b> Advanced Java, JavaScript, HTML, PHP</p>
+                            <p><b>Languages Spoken: </b> English, Spanish, Hindi </p>
+                            <p><b>Proficiency</b> 4 </p> -->
+                        </div>
+
+                        <div id="studentExperienceDetails" class="studentExperienceDetails" style="display: none;">
+                            {{studentExperienceDetails}}
+                        </div>
+                        <button type="button" class="collapsible">Work Experience
+                            <b class="pull-right">+</b>
+                        </button>
+                        <div id="experience" class="content">
+                            <!-- <p><b>Title: </b> Senior Software Engineer</p>
+                            <p><b>Company: </b> PQR Pvt Ltd </p>
+                            <p><b>Start Date:</b> 01/01/2022 </p>
+                            <p><b>End Date:</b> 03/01/2022 </p>
+                            <p><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+           
+            <br />
+        </div>
+        <div class="footer">
+            <p class="text-center">
+                This website is the intellectual property of Team 5
+            </p>
+        </div>
+    </body>
+
+    <script>
+
+        window.onload = function() {
+            getStudentDetails()
+        }
+
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+
+        function getStudentDetails() {
+            var studentId = window.localStorage.getItem("studentId")
+            console.log("Got studentid from store ::::: ", studentId)
+            const dict_values = {studentId}
+            const str = JSON.stringify(dict_values)
+            
+            $.ajax({
+                url: "/get_student_homepage_details",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(str),
+                success: function(response) {
+                    document.write(response)
+                    
+                    var basicDetails = JSON.parse(document.getElementById("studentDetails").innerHTML);
+                    console.log("basicDetails ---------->", basicDetails[0])
+                    console.log("basicDetails ---------->", basicDetails[0].Address)
+                    
+                    var studentName = document.getElementById("studentName")
+                    studentName.innerHTML += basicDetails[0].Name
+
+                    var objectives = document.getElementById("objectives")
+                    objectives.innerHTML += basicDetails[0].Objectives
+
+                    // var basic = document.getElementById("basic")
+                    basic.innerHTML += `<p><b>Address:</b> ` + basicDetails[0].Address + ` </p>
+                            <p><b>Pin code:</b> ` + basicDetails[0].Pin_code + ` </p>
+                            <p><b>Date of birth:</b> ` + basicDetails[0].Date_of_birth + ` </p>
+                            <p><b>Links:</b> <a href="`+basicDetails[0].Links +`" >` + basicDetails[0].Links + `</a> </p>`
+                    
+                    skills.innerHTML += `<p><b>Skills: </b> ` + basicDetails[0].Skills + `</p>
+                            <p><b>Languages Spoken: </b> ` + basicDetails[0].Languages_spoken + `</p>
+                            <p><b>Proficiency</b> ` + basicDetails[0].Proficiency + `</p>`
+
+                    var educationDetails = JSON.parse(document.getElementById("studentEducationDetails").innerHTML);
+                    // var education = document.getElementById("education")
+                    education.innerHTML += `<p><b>Degree: </b> ` + educationDetails[0].Degree + ` </p>
+                            <p><b>GPA: </b> ` + educationDetails[0].GPA + ` </p>
+                            <p><b>Start Date:</b> ` + educationDetails[0].Start_date + ` </p>
+                            <p><b>End Date:</b> ` + educationDetails[0].Graduation_year + ` </p>
+                            <p><b>Description:</b> ` + educationDetails[0].Description + ` </p>
+                            <p><b>Awards / Papers:</b> ` + educationDetails[0].Awards + ` </p>`
+
+                    var certificationDetails = JSON.parse(document.getElementById("studentCertificationDetails").innerHTML);
+                    // var certification = document.getElementById("certification")
+                    certification.innerHTML += `<p><b>Certification: </b> ` + certificationDetails[0].Certification + ` </p>
+                            <p><b>Awarding Body: </b> ` + certificationDetails[0].Awarding_body + ` </p>
+                            <p><b>Start Date:</b> ` + certificationDetails[0].Start_date + ` </p>
+                            <p><b>End Date:</b> ` + certificationDetails[0].End_date + ` </p>
+                            <p><b>Description:</b> ` + certificationDetails[0].Description + ` </p>`
+
+                    var workExDetails = JSON.parse(document.getElementById("studentExperienceDetails").innerHTML);
+                    // var experience = document.getElementById("experience")
+                    console.log("workExDetails --------> ", workExDetails[0])
+                    experience.innerHTML += `<p><b>Title: </b> ` + workExDetails[0].Title + ` </p>
+                            <p><b>Company: </b> ` + workExDetails[0].Company_name + ` </p>
+                            <p><b>Start Date:</b> ` + workExDetails[0].Start_date + ` </p>
+                            <p><b>End Date:</b> ` + workExDetails[0].End_date + ` </p>
+                            <p><b>Description:</b> ` + workExDetails[0].Description + ` </p>`
+
+                    var jobAlerts = JSON.parse(document.getElementById("studentAlertDetails").innerHTML);
+                    var alerts = document.getElementById("alerts")
+                    for (let i = 0; i < jobAlerts.length; i++) {
+                        alerts.innerHTML += `<p><b>Company Name:</b> ` + jobAlerts[i].Name + ` </p>
+                                <p><b>Job Title: </b> ` + jobAlerts[i].Title + ` </p>
+                                <p><b>Job Description: </b> ` + jobAlerts[i].Description + ` </p>
+                                <hr />`
+                    }
+                    
+                },
+                error: function(response) {
+                    alert("Error signing up")
+                }
+            });
+        }
+
+        function isEmpty(val) {
+            return (val === undefined || val == null || val.length <= 0) ? true : false;
+        }
+
+        function searchJobs() {
+            const domain = document.getElementById("studDomainDropdown").value
+            const skill = document.getElementById("studSkills").value
+            const profile = document.getElementById("jobProfileDropdown").value
+            console.log(domain)
+            console.log(skill)
+            console.log(profile)
+            window.localStorage.setItem("domain", domain)
+            window.localStorage.setItem("skill", skill)
+            window.localStorage.setItem("profile", profile)
+
+            if (isEmpty(domain) || isEmpty(skill) || isEmpty(profile)) {
+                alert("Please enter values for all filters")
+            } else {
+                location.href = 'studentResult'
+            }
+        }
+        
+        function studentLogout() {
+            // empty session storage here
+            window.localStorage.clear()
+            location.href = 'home'
+        }
+        </script>
+        
+</html>
+

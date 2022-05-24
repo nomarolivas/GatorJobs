@@ -1,0 +1,317 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../static/styles/admin.css">
+    <!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}"/> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-buttons-class">
+            <div>
+                <button type="button" class="btn pull-right head-btn" onclick="adminLogout()">Logout</button>
+            </div>
+        </div>
+        <div class="header-title">
+            GATORJOBS
+        </div>
+        <!-- <div class="header-subtitle">
+                Helping students find their dream jobs...
+            </div> -->
+    </div>
+    <div class="admin-body">
+        <div class="welcome">
+            <h2>
+                WELCOME ADMIN!
+            </h2>
+        </div>
+        <br />
+        <div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item active">
+                    <a class="nav-link active" id="students-tab" data-toggle="tab" href="#students" role="tab"
+                        aria-controls="students" aria-selected="true">SEARCH STUDENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="jobs-tab" data-toggle="tab" href="#jobs" role="tab" aria-controls="jobs"
+                        aria-selected="false">SEARCH JOBS</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade active" id="students" role="tabpanel" aria-labelledby="students-tab">
+                    <div class="col-md-12">
+                        <div class="dropdown col-md-4">
+                            <select class="dropdown-menu-style" id="studDomainDropdown"
+                                style="height: 35px;border-radius: 5px;">
+                                <option disabled selected>FILTER BY DOMAIN</option>
+                                <option>Artificial Intelligence and Machine Learning</option>
+                                <option>Robotic Process Automation (PA)</option>
+                                <option>Edge Computing</option>
+                                <option>Quantum Computing</option>
+                                <option>Virtual Reality and Augmented Reality</option>
+                                <option>Blockchain</option>
+                                <option>Internet of Things (loT)</option>
+                                <option>5G</option>
+                                <option>Cyber Security</option>
+                            </select>
+                        </div>
+                        <div class="input-menu-style col-md-4">
+                            <input type="text" class="form-control" id="studSkills" aria-describedby="studSkills"
+                                placeholder="FILTER BY SKILLS">
+                        </div>
+                        <div class="dropdown col-md-3">
+                            <select class="dropdown-menu-style" id="studEducationDropdown"
+                                style="height: 35px;border-radius: 5px;">
+                                <option selected disabled>FILTER BY EDUCATION LEVEL</option>
+                                <option>High School Graduate</option>
+                                <option>Graduate</option>
+                                <option>Undergraduate</option>
+                                <option>PhD</option>
+                                <option>Post Doc</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <button class="btn head-btn" onclick="searchStudents()">Search</button>
+                        </div>
+                    </div>
+                    <br /> <br /><br />
+                    <div class="students-result col-md-12">
+                        Showing results of filtered students:
+                        <div id="studs" class="studs" style="display: none;">
+                            {{studs}}
+                        </div>
+                        <div id="students-list-all">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="jobs" role="tabpanel" aria-labelledby="jobs-tab">
+                    <div class="col-md-12">
+                        <div class="dropdown col-md-4">
+                            <select class="dropdown-menu-style" id="jobDomainDropdown"
+                                style="height: 35px;border-radius: 5px;">
+                                <option disabled selected>FILTER BY DOMAIN</option>
+                                <option>Artificial Intelligence and Machine Learning</option>
+                                <option>Robotic Process Automation (PA)</option>
+                                <option>Edge Computing</option>
+                                <option>Quantum Computing</option>
+                                <option>Virtual Reality and Augmented Reality</option>
+                                <option>Blockchain</option>
+                                <option>Internet of Things (loT)</option>
+                                <option>5G</option>
+                                <option>Cyber Security</option>
+                            </select>
+                        </div>
+                        <div class="input-menu-style col-md-4">
+                            <input type="text" class="form-control" id="jobSkills" aria-describedby="jobSkills"
+                                placeholder="FILTER BY SKILLS">
+                        </div>
+                        <div class="dropdown col-md-3">
+                            <select class="dropdown-menu-style" id="jobProfileDropdown"
+                                style="height: 35px;border-radius: 5px;">
+                                <option selected disabled>FILTER BY EDUCATION LEVEL</option>
+                                <option>Software Engineer</option>
+                                <option>Accountant</option>
+                                <option>Tester</option>
+                                <option>Maintainence Engineer</option>
+                                <option>Network Engineer</option>
+                                <option>Data Scientist</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <button class="btn head-btn" onclick="searchJobs()">Search</button>
+                        </div>
+                    </div>
+                    <br /> <br /><br />
+                    <div class="students-result col-md-12">
+                        Showing results of filtered jobs:
+                        <div id="jobs-list-all">
+                        </div>
+                        <div id="jbs" class="jbs" style="display: none;">
+                            {{jbs}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+    </div>
+    <div class="footer">
+        <p class="text-center">
+            This website is the intellectual property of Team 5
+        </p>
+    </div>
+</body>
+
+<script>
+    var studentList
+    var jobList
+
+    window.onload = function () {
+        window.localStorage.clear();
+        getData();
+    }
+
+    function getData() {
+        $.ajax({
+            url: "/get_data_for_admin",
+            type: "POST",
+            contentType: "application/json",
+            success: function (response) {
+                console.log(response)
+                window.document.write(response)
+                studentList = JSON.parse(document.getElementById("studs").innerHTML);
+                jobList = JSON.parse(document.getElementById("jbs").innerHTML);
+                for (let i = 0; i < studentList.length; i++) {
+                    var studs = document.getElementById("students-list-all")
+                    studs.innerHTML += `
+                    <div class="student-list">
+                        <div class="student-title">
+                            <div>
+                                `+ studentList[i].Name +`
+                                <button class="btn pull-right head-btn" onclick="selectStudent(`+ studentList[i].Student_ID+`)">Select</button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="student-info">
+                            <p><b>Objective:</b> `+ studentList[i].Objectives +` </p>
+                            <p><b>Degree:</b> `+ studentList[i].Degree +` </p>
+                            <p><b>GPA:</b> `+ studentList[i].GPA +` </p>
+                            <p><b>Domain:</b> `+ studentList[i].Category +` </p>
+                        </div>
+                    </div>`
+                }
+
+                for (let j = 0; j < jobList.length; j++) {
+                    var jobs = document.getElementById("jobs-list-all")
+                    jobs.innerHTML += `
+                    <div class="student-list">
+                        <div class="student-title">
+                            `+ jobList[j].Title +`
+                            <button class="btn pull-right head-btn" onclick="selectJob(`+ jobList[j].Job_ID+`)">Select</button>
+                        </div>
+                        <br />
+                        <div class="student-info">
+                            <p><b>Company Name:</b> `+ jobList[j].Name +`</p>
+                            <p><b>Description:</b> `+ jobList[j].Description +`</p>
+                            <p><b>Annual Compensation:</b> `+ jobList[j].Annual_compensation +`</p>
+                            <p><b>Required Skills:</b> `+ jobList[j].Required_skills +`</p>
+                            <p><b>Domain:</b> `+ jobList[j].Category +` </p>
+                        </div>
+                    </div>
+                    `
+                }
+            },
+            error: function (response) {
+                console.log("Error getting data")
+            }
+        });
+    }
+
+    // POPULATE DATA 
+
+    function selectStudent(id) {
+        window.localStorage.removeItem('jobId');
+        window.localStorage.setItem('studentId', id);
+        console.log(id)
+        // alert(window.localStorage.getItem('studentId'))
+        setTimeout(function(){
+            location.href = "adminStudent"
+        }, 100)
+    }
+
+    function selectJob(id) {
+        window.localStorage.removeItem('studentId')
+        window.localStorage.setItem('jobId', id);
+        setTimeout(function(){
+            location.href = "adminJobs"
+        }, 100)
+    }
+
+    function isEmpty(val) {
+        return (val === undefined || val == null || val.length <= 0) ? true : false;
+    }
+
+    function searchStudents() {
+        const domain = document.getElementById("studDomainDropdown").value
+        const skill = document.getElementById("studSkills").value
+        const eductation = document.getElementById("studEducationDropdown").value
+        console.log(domain)
+        console.log(skill)
+        console.log(eductation)
+
+        if (isEmpty(domain) || isEmpty(skill) || isEmpty(eductation)) {
+            alert("Please enter values for all filters")
+        } else {
+            var dict_values = { domain, skill, eductation }
+            var studentParams = JSON.stringify(dict_values)
+            $.ajax({
+                url: "/filterStudentData",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(studentParams),
+                success: function (response) {
+                    console.log(response)
+                    window.document.write(response)
+                    studentList = response
+                },
+                error: function (response) {
+                    console.log("Error getting data")
+                }
+            });
+        }
+    }
+
+    function searchJobs() {
+        const domain = document.getElementById("jobDomainDropdown").value
+        const skill = document.getElementById("jobSkills").value
+        const profile = document.getElementById("jobProfileDropdown").value
+        console.log(domain)
+        console.log(skill)
+        console.log(profile)
+
+        if (isEmpty(domain) || isEmpty(skill) || isEmpty(profile)) {
+            alert("Please enter values for all filters")
+        } else {
+            var dict_values = { domain, skill, profile }
+            var studentParams = JSON.stringify(dict_values)
+            $.ajax({
+                url: "/filterJobData",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(studentParams),
+                success: function (response) {
+                    console.log(response)
+                    window.document.write(response)
+                    jobList = response
+                },
+                error: function (response) {
+                    console.log("Error getting data")
+                }
+            });
+        }
+    }
+
+    function adminLogout() {
+        window.localStorage.clear();
+        location.href = 'home'
+    }
+</script>
+
+</html>

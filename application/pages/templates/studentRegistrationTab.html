@@ -1,0 +1,663 @@
+<HTML>
+
+    <head>
+        <link rel="stylesheet" href="../static/styles/studentRegistrationTab.css">
+        <!-- <link rel="stylesheet" type="text/css" -->
+            <!-- href="{{ url_for('static', filename='styles/studentRegistrationTab.css') }}" /> -->
+        <!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}"/> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+            integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+            </script>
+    
+        <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+        
+        <!-- Adding Firebase libraries to web app -->
+        "type":"module"
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+        
+    </head>
+    
+    <body>
+        <div class="form-main-component">
+            <div class="form-title-container">
+                <h1>Student Registration</h1>
+                <p>Follow the 6 simple steps to complete your registration and start applying for jobs!</p>
+            </div>
+            <div class="form-body-component">
+                <!-- left component of the form -->
+                <div class="form-left-component">
+                    <div class="form-left-title-component">
+                        <div class="left-title-name">
+                            <h3>Basic Info</h3>
+                        </div>
+                        <div class="left-title-name">
+                            <h3>Educational Qualification</h3>
+                        </div>
+                        <div class="left-title-name">
+                            <h3>Certification</h3>
+                        </div>
+                        <div class="left-title-name">
+                            <h3>Skills & Languages</h3>
+                        </div>
+                        <div class="left-title-name">
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div class="left-title-name">
+                            <h3>Objective</h3>
+                        </div>
+                        <div class="left-title-name">
+                            <h3>Review & Submit</h3>
+                        </div>
+                    </div>
+                    <div class="progress-tab-component">
+                        <ul>
+                            <li class="active" id="icon1">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </li>
+                            <li id="icon2">
+                                <span class="glyphicon glyphicon-education"></span>
+                            </li>
+                            <li id="icon3">
+                                <span class="glyphicon glyphicon-certificate"></span>
+                            </li>
+                            <li id="icon4">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </li>
+                            <li id="icon5">
+                                <span class="glyphicon glyphicon-briefcase"></span>
+                            </li>
+                            <li id="icon6">
+                                <span class="glyphicon glyphicon-record"></span>
+                            </li>
+                            <li id="icon7">
+                                <span class="glyphicon glyphicon-thumbs-up"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- right component i.e input form -->
+                <div class="form-right-component">
+                    <!-- form 1 i.e basic info of student -->
+                    <fieldset id="form1">
+                        <div class="sub-title-container">
+                            <p>Step 1/7</p>
+                            <h3>Basic Information</h3>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="input-container-left">
+                                <input type="text" id="first-name" placeholder="First Name">
+                                <input type="text" id="last-name" placeholder="Last Name">
+                                <input type="text" id="student-id" placeholder="Student ID">
+                                <input type="text" id="address" placeholder="Address">
+                                <input type="url" id="link" placeholder="Links">
+                            </div>
+                            <div class="input-container-right">
+                                <div class="profile-pic-component">
+                                    <label for="avatar">Choose a profile picture:</label>
+                                    <input type="file" class="input-file" id="profile-picture">
+                                </div>
+                                <input type="text" id="date-of-birth" placeholder="Date Of Birth">
+                                <input type="number" id="pincode" placeholder="Pincode">
+                                <select class="dropdown-menu-style" id="category" style="height: 35px;border-radius: 5px;">
+                                    <option disabled selected>FILTER BY DOMAIN</option>
+                                    <option>Artificial Intelligence and Machine Learning</option>
+                                    <option>Robotic Process Automation (PA)</option>
+                                    <option>Edge Computing</option>
+                                    <option>Quantum Computing</option>
+                                    <option>Virtual Reality and Augmented Reality</option>
+                                    <option>Blockchain</option>
+                                    <option>Internet of Things (loT)</option>
+                                    <option>5G</option>
+                                    <option>Cyber Security</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="next-button btn " onclick="nextForm();"> Next</button>
+                    </fieldset>
+    
+    
+                    <!-- form 2 i.e Educational Qualifications-->
+                    <fieldset class="active-form" id="form2">
+                        <div class="sub-title-container">
+                            <p>Step 2/7</p>
+                            <h3>Educational Qualifications</h3>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="input-container-left">
+                                <input type="text" id="degree" placeholder="Degree">
+                                <input type="text" id="GPA" placeholder="GPA">
+                                <input type="text" id="qualification-description" placeholder="Description">
+                            </div>
+                            <div class="input-container-left">
+                                <input type="text" id="education-start-date" placeholder="Start Date">
+                                <input type="text" id="awards" placeholder="Awards/papers">
+                                <input type="text" id="graduation-year" placeholder="Graduation Year">
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <a class="prev-button" onclick="prevForm();"> Previous</a>
+                            <button class="next-button btn " onclick="nextForm();"> Next</button>
+                        </div>
+                    </fieldset>
+    
+    
+                    <!-- form 3 i.e Certifications-->
+                    <fieldset class="active-form" id="form3">
+                        <div class="sub-title-container">
+                            <p>Step 3/7</p>
+                            <h3>Certification</h3>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="input-container-left">
+                                <input type="text" id="certification" placeholder="Certification">
+                                <input type="text" id="awarding-body" placeholder="Awarding Body">
+                                <input type="text" id="certification-start-date" placeholder="Start Date">
+                                <input type="text" id="certification-end-date" placeholder="End Date">
+                            </div>
+                            <div class="input-container-right">
+                                <div class="profile-pic-component">
+                                    <label for="avatar">Upload Certificates:</label>
+                                    <input type="file" class="input-file" id="certificate-file">
+                                </div>
+                                <input type="text" id="certification-description" placeholder="Description">
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <a class="prev-button" onclick="prevForm();"> Previous</a>
+                            <button class="next-button btn " onclick="nextForm();"> Next</button>
+                        </div>
+                    </fieldset>
+    
+    
+                    <!-- form 4 i.e Skills and Languages-->
+                    <fieldset class="active-form" id="form4">
+                        <div class="sub-title-container">
+                            <p>Step 4/7</p>
+                            <h3>Skills and Languages</h3>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="input-container-left">
+                                <input type="text" id="skills" placeholder="Skills">
+                                <input type="text" id="languages" placeholder="Languages Spoken">
+                                <input type="number" id="proficency" placeholder="Proficency(on scale of 1-5)" min="0"
+                                    max="5">
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <a class="prev-button" onclick="prevForm();"> Previous</a>
+                            <button class="next-button btn " onclick="nextForm();"> Next</button>
+                        </div>
+                    </fieldset>
+    
+    
+                    <!-- form 5 i.e Work Experience-->
+                    <fieldset class="active-form" id="form5">
+                        <div class="sub-title-container">
+                            <p>Step 5/7</p>
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="input-container-left">
+                                <input type="text" id="work-title" placeholder="Title">
+                                <input type="text" id="company" placeholder="Company">
+                                <input type="text" id="work-start-date" placeholder="Start Date">
+                                <input type="text" id="work-end-date" placeholder="End Date">
+                                <input type="text" id="position" placeholder="Position">
+                            </div>
+                            <div class="input-container-right">
+                                <div class="profile-pic-component">
+                                    <label for="avatar">Experience Letter:</label>
+                                    <input type="file" class="input-file" id="experience-letter-file">
+                                </div>
+                                <input type="text" id="work-description" placeholder="Description">
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <a class="prev-button" onclick="prevForm();"> Previous</a>
+                            <button class="next-button btn " onclick="nextForm();"> Next</button>
+                        </div>
+                    </fieldset>
+    
+    
+                    <!-- form 6 i.e Objective-->
+                    <fieldset class="active-form" id="form6">
+                        <div class="sub-title-container">
+                            <p>Step 6/7</p>
+                            <h3>Objctive</h3>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="input-container-left">
+                                <textarea type="text" id="objective" class="objective" placeholder="Objective"></textarea>
+                                <div class="profile-pic-component">
+                                    <label for="avatar">Recommendation Letter:</label>
+                                    <input type="file" class="input-file" id="recommendation-letter-file">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <a class="prev-button" onclick="prevForm();"> Previous</a>
+                            <button class="next-button btn " onclick="nextForm();"> Next</button>
+                        </div>
+                    </fieldset>
+    
+                    <!-- form 7 i.e review & Submit-->
+                    <fieldset class="active-form" id="form7">
+                        <div class="sub-title-container">
+                            <p>Step 7/7</p>
+                            <h3>Submit</h3>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="input-container-left">
+                                <div class="terms-container">
+                                    <input type="checkbox" class="input-file terms" id="terms-condition">
+                                    <label>I confirm that I have provided all the information correctly and
+                                        <br>this information will show up on my profile and can be viewed by companies as
+                                        well as admin.</br>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <a class="prev-button" onclick="prevForm();"> Previous</a>
+                            <button id="submitBtn" class="next-button btn" onclick="submit_function();"> Submit</button>
+                        </div>
+                    </fieldset>
+    
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    
+    <!-- Javascript part -->
+<script>
+           
+//Not being read correctly 
+//   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+//   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+
+//Updated way of importing Firebase 
+
+// import firebase from "firebase/app";
+// import "firebase/firestore";
+// import "firebase/storage";
+
+//   const firebaseConfig = {
+//     apiKey: "AIzaSyDftpIdveqW_WUQFFGhMQMHyp4nVXFCFQ0",
+//     authDomain: "csc-648-team-5.firebaseapp.com",
+//     databaseURL: "https://csc-648-team-5-default-rtdb.firebaseio.com",
+//     projectId: "csc-648-team-5",
+//     storageBucket: "csc-648-team-5.appspot.com",
+//     messagingSenderId: "925303295404",
+//     appId: "1:925303295404:web:12c0d6f192ae6239b93e09",
+//     measurementId: "G-ZPS6CSD4PR"
+//   };
+
+//   //NEW WAY of Initialize Firebase
+//   // Initialize Firebase
+//     firebase.initializeApp(firebaseConfig);
+
+
+// Initialize Cloud Firestore and get a reference to the service
+        // const db = firebase.firestore();
+
+
+        //  Old Initialize Firebase
+        // console.log("FireBase is being read")
+        // const app = initializeApp(firebaseConfig);
+        // const analytics = getAnalytics(app);
+        // console.log("FireBase was successfully read")
+        
+    const nxtBtn = document.querySelector('#submitBtn');
+    const form1 = document.querySelector('#form1');
+    const form2 = document.querySelector('#form2');
+    const form3 = document.querySelector('#form3');
+    const form4 = document.querySelector('#form4');
+    const form5 = document.querySelector('#form5');
+    const form6 = document.querySelector('#form6');
+    const form7 = document.querySelector('#form7');
+
+
+    const icon1 = document.querySelector('#icon1');
+    const icon2 = document.querySelector('#icon2');
+    const icon3 = document.querySelector('#icon3');
+    const icon4 = document.querySelector('#icon4');
+    const icon5 = document.querySelector('#icon5');
+    const icon6 = document.querySelector('#icon6');
+    const icon7 = document.querySelector('#icon7');
+
+    var viewId = 1;
+    function nextForm() {
+        viewId = viewId + 1;
+        progressBar();
+        displayForms();
+    }
+
+    function prevForm() {
+        viewId = viewId - 1;
+        progressBar1();
+        displayForms();
+    }
+    function progressBar1() {
+        if (viewId === 1) {
+            icon2.classList.add('active');
+            icon2.classList.remove('active');
+            icon3.classList.remove('active');
+            icon4.classList.remove('active');
+            icon5.classList.remove('active');
+            icon6.classList.remove('active');
+            icon7.classList.remove('active');
+        }
+        if (viewId === 2) {
+            icon2.classList.add('active');
+            icon3.classList.remove('active');
+            icon4.classList.remove('active');
+            icon5.classList.remove('active');
+            icon6.classList.remove('active');
+            icon7.classList.remove('active');
+        }
+        if (viewId === 3) {
+            icon3.classList.add('active');
+            icon4.classList.remove('active');
+            icon5.classList.remove('active');
+            icon6.classList.remove('active');
+            icon7.classList.remove('active');
+        }
+        if (viewId === 4) {
+            icon4.classList.add('active');
+            icon5.classList.remove('active');
+            icon6.classList.remove('active');
+            icon7.classList.remove('active');
+        }
+        if (viewId === 5) {
+            icon5.classList.add('active');
+            icon6.classList.remove('active');
+            icon7.classList.remove('active');
+        }
+        if (viewId === 6) {
+            icon6.classList.remove('active');
+            icon7.classList.remove('active');
+        }
+        if (viewId === 7) {
+            icon7.classList.remove('active');
+        }
+        if (viewId > 7) {
+            icon2.classList.remove('active');
+            icon3.classList.remove('active');
+            icon4.classList.remove('active');
+            icon5.classList.remove('active');
+            icon6.classList.remove('active');
+            icon7.classList.remove('active');
+        }
+    }
+
+    function progressBar() {
+        if (viewId === 2) {
+            icon2.classList.add('active');
+        }
+        if (viewId === 3) {
+            icon3.classList.add('active');
+        }
+        if (viewId === 4) {
+            icon4.classList.add('active');
+        }
+        if (viewId === 5) {
+            icon5.classList.add('active');
+        }
+        if (viewId === 6) {
+            icon6.classList.add('active');
+        }
+        if (viewId === 7) {
+            icon7.classList.add('active');
+
+        }
+        if (viewId > 7) {
+            icon2.classList.remove('active');
+            icon3.classList.remove('active');
+            icon4.classList.remove('active');
+            icon5.classList.remove('active');
+            icon6.classList.remove('active');
+            icon7.classList.remove('active');
+        }
+    }
+
+    function displayForms() {
+
+        if (viewId > 7) {
+            viewId = 1;
+        }
+
+        if (viewId === 1) {
+            form1.style.display = 'block';
+            form2.style.display = 'none';
+            form3.style.display = 'none';
+            form4.style.display = 'none';
+            form5.style.display = 'none';
+            form6.style.display = 'none';
+            form7.style.display = 'none';
+
+        } else if (viewId === 2) {
+            form1.style.display = 'none';
+            form2.style.display = 'block';
+            form3.style.display = 'none';
+            form4.style.display = 'none';
+            form5.style.display = 'none';
+            form6.style.display = 'none';
+            form7.style.display = 'none';
+
+        } else if (viewId === 3) {
+            form1.style.display = 'none';
+            form2.style.display = 'none';
+            form3.style.display = 'block';
+            form4.style.display = 'none';
+            form5.style.display = 'none';
+            form6.style.display = 'none';
+            form7.style.display = 'none';
+        } else if (viewId === 4) {
+            form1.style.display = 'none';
+            form2.style.display = 'none';
+            form3.style.display = 'none';
+            form4.style.display = 'block';
+            form5.style.display = 'none';
+            form6.style.display = 'none';
+            form7.style.display = 'none';
+
+        } else if (viewId === 5) {
+            form1.style.display = 'none';
+            form2.style.display = 'none';
+            form3.style.display = 'none';
+            form4.style.display = 'none';
+            form5.style.display = 'block';
+            form6.style.display = 'none';
+            form7.style.display = 'none';
+
+        } else if (viewId === 6) {
+            form1.style.display = 'none';
+            form2.style.display = 'none';
+            form3.style.display = 'none';
+            form4.style.display = 'none';
+            form5.style.display = 'none';
+            form6.style.display = 'block';
+            form7.style.display = 'none';
+
+        } else if (viewId === 7) {
+            form1.style.display = 'none';
+            form2.style.display = 'none';
+            form3.style.display = 'none';
+            form4.style.display = 'none';
+            form5.style.display = 'none';
+            form6.style.display = 'none';
+            form7.style.display = 'block';
+
+        }
+    }
+
+    //function to send data to backend
+    function submit_function() {
+
+        const first_name = document.getElementById("first-name").value;
+        const last_name = document.getElementById("last-name").value;
+        const student_id = document.getElementById("student-id").value;
+        const address = document.getElementById("address").value;
+        const link = document.getElementById("link").value;
+        const profile_picture = document.getElementById("profile-picture").value;
+        const date_of_birth = document.getElementById("date-of-birth").value;
+        const pincode = document.getElementById("pincode").value;
+        const category = document.getElementById("category").value;
+        const degree = document.getElementById("degree").value;
+        const GPA = document.getElementById("GPA").value;
+        const qualification_description = document.getElementById("qualification-description").value;
+        const education_start_date = document.getElementById("education-start-date").value;
+        const awards = document.getElementById("awards").value;
+        const graduation_year = document.getElementById("graduation-year").value;
+        const certification = document.getElementById("certification").value;
+        const awarding_body = document.getElementById("awarding-body").value;
+        const certification_start_date = document.getElementById("certification-start-date").value;
+        const certification_end_date = document.getElementById("certification-end-date").value;
+        const certificate_file = document.getElementById("certificate-file").value;
+        const certification_description = document.getElementById("certification-description").value;
+        const skills = document.getElementById("skills").value;
+        const languages = document.getElementById("languages").value;
+        const proficency = document.getElementById("proficency").value;
+        const work_title = document.getElementById("work-title").value;
+        const company = document.getElementById("company").value;
+        const work_start_date = document.getElementById("work-start-date").value;
+        const work_end_date = document.getElementById("work-end-date").value;
+        const position = document.getElementById("position").value;
+        const experience_letter_file = document.getElementById("experience-letter-file").value;
+        const work_description = document.getElementById("work-description").value;
+        const objective = document.getElementById("objective").value;
+        const recommendation_letter_file = document.getElementById("recommendation-letter-file").value;
+
+
+        const student_info_val = {
+            first_name, last_name, student_id, address, link, profile_picture, date_of_birth,
+            pincode, category, degree, GPA, qualification_description, education_start_date, awards,
+            graduation_year, certification, awarding_body, certification_start_date,
+            certification_end_date, certificate_file, certification_description, skills,
+            languages, proficency, work_title, company, work_start_date, work_end_date,
+            position, experience_letter_file, work_description, objective, recommendation_letter_file
+        } //Pass the javascript variables to a dictionary.
+
+        const s = JSON.stringify(student_info_val); // Stringify converts a JavaScript object or value to a JSON string
+        console.log(s); // Prints the variables to console window, which are in the JSON format
+        $.ajax({
+            url: "/student_complete_registration",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(s),
+            success: function (response) {
+                console.log(response)
+                document.write(response)
+                location.href = 'studentHomepage'
+            }, 
+            error: function(response) {
+                alert("Error in registration.")
+            }
+        });
+
+
+
+        // //Upload file starts here
+        // const full_path = document.getElementById("profile-picture").value; //Path for file
+        // const file_name = document.getElementById("profile-picture")        //Name of file
+
+        // var storageRef = firebase.storage().ref('/studentImage/' +file_name );
+        // var uploadTask = storageRef.put(full_path)
+
+
+        // uploadTask.on('state_changed', function(snapshot){
+
+        // }, function(error) {
+            
+        // }, function() {
+
+        //     var downloadURL = uploadTask.snapshot.downloadURL;
+        //     console.log(downloadURL);
+
+        // });
+    }
+    
+    // Uploading a file by reference 
+    // function uploadRef() {
+
+        
+    //     const full_path = document.getElementById("profile-picture").value; //Path for file
+    //     const file_name = document.getElementById("profile-picture")        //Name of file
+
+    //     console.log("full_path : ", full_path)
+
+    //     console.log("profile_picture name : ", file_name.files.item(0).name)
+
+        
+
+    //     // Create a root reference
+    //     var storageRef = firebase.storage().ref();
+
+    //     // Create a reference to 'mountains.jpg'
+    //     var studentRef = storageRef.child(file_name);
+
+    //     // Create a reference to 'images/mountains.jpg'
+    //     var studentImagesRef = storageRef.child('images/' +file_name);
+
+    //     // While the file names are the same, the references point to different files
+    //     studentRef.name === studentImagesRef.name        // true
+    //     studentRef.fullPath === studentImagesRef.fullPath;   // false    
+
+    //     console.log("Uploaded photo successfully")
+
+    // }
+
+
+    // function uploadFile(){
+    //     const full_path = document.getElementById("profile-picture").value; //Path for file
+    //     const file_name = document.getElementById("profile-picture")        //Name of file
+
+    //     var storageRef = firebase.storage().ref('/studentImage/' +file_name );
+    //     var uploadTask = storageRef.put(full_path)
+
+
+    //     uploadTask.on('state_changed', function(snapshot){
+
+    //     }, function(error) {
+            
+    //     }, function() {
+
+    //         var downloadURL = uploadTask.snapshot.downloadURL;
+    //         console.log(downloadURL);
+
+    //     });
+
+
+    // }
+    
+    // // Uploading a blob or file 
+    // function uploadBlob(file) {
+
+    //     const full_path = document.getElementById("profile-picture").value; //Path for file
+    //     const ref = firebase.storage().ref().child('profile-picture');
+
+    //     // [START storage_upload_blob]
+    //     // 'file' comes from the Blob or File API
+    //     ref.put(full_path).then((snapshot) => {
+    //         console.log('Uploaded a blob or file!');
+    //     });
+    //     // [END storage_upload_blob]
+    // }   
+
+    </script>
+    
+    </HTML>

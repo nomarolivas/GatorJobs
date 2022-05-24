@@ -1,0 +1,312 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../static/styles/company.css">
+    <!-- <link rel="stylesheet" href="company.css"> -->
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+</head>
+
+<body>
+    <!-- Header of the website -->
+    <div class="header">
+        <div class="header-title col-md-8">
+            GATORJOBS
+        </div>
+        <div class="header-buttons-class">
+            <button type="button" class="btn head-btn spacing" data-toggle="modal" data-target="#filtermodal">
+                <span class="glyphicon glyphicon-user" ></span> Search Students
+            </button>
+                
+            <button type="button" class="btn head-btn spacing" onclick="companyLogout()">
+                <span class="glyphicon glyphicon-off" ></span> Logout
+            </button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="filtermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="exampleModalLabel">Search Students by Filtering</h4>
+            </div>
+            <div class="dropdown col-md-4">
+                <select class="dropdown-menu-style" id="studDomainDropdown" style="height: 35px;border-radius: 5px;">
+                    <option disabled selected>FILTER BY DOMAIN</option>
+                    <option>Artificial Intelligence and Machine Learning</option>
+                    <option>Robotic Process Automation (PA)</option>
+                    <option>Edge Computing</option>
+                    <option>Quantum Computing</option>
+                    <option>Virtual Reality and Augmented Reality</option>
+                    <option>Blockchain</option>
+                    <option>Internet of Things (loT)</option>
+                    <option>5G</option>
+                    <option>Cyber Security</option>
+                </select>
+            </div>
+            <div class="input-menu-style col-md-4">
+                <input type="text" class="form-control" id="studSkills" aria-describedby="skills"
+                    placeholder="FILTER BY SKILLS">
+            </div>
+            <div class="dropdown col-md-3">
+                <select class="dropdown-menu-style" id="studEducationDropdown"
+                    style="height: 35px;border-radius: 5px;">
+                    <option selected disabled>FILTER BY EDUCATION LEVEL</option>
+                    <option>High School Graduate</option>
+                    <option>Graduate</option>
+                    <option>Undergraduate</option>
+                    <option>PhD</option>
+                    <option>Post Doc</option>
+                </select>
+            </div>
+            <br /><br /><br /><br />
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="searchStudents()">Search</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- content -->
+    <div class="body-content">
+        <div id="companyId" class="companyId" style="display: none;">
+            {{companyId}}
+        </div>
+        <!-- Profile of the company -->
+
+        <div id="companyDetails" class="companyDetails" style="display: none;">
+            {{companyDetails}}
+        </div>
+
+        <div id="jobDetails" class="jobDetails" style="display: none;">
+            {{jobDetails}}
+        </div>
+
+        <div id="company-profile" class="profile">
+        </div>
+
+
+        <!-- Jobs results -->
+        <div class="filter-result-main">
+            <br />
+            <div id="jobList" class="students-result col-md-12">
+                Current job listings:
+            </div>
+
+        </div>
+
+
+        <!-- Upload New Jobs component -->
+        <div class="new-job-opening">
+            <div class="job-opening-heading">
+                <label>POST NEW JOBS</label>
+            </div>
+            <form>
+
+                <!-- Title input field -->
+                <div class="form-group">
+                    <label class="job-form-label">Job Title</label>
+                    <input class="form-control" id="InputJobTitle">
+                </div>
+
+                <!-- Description input field -->
+                <div class="form-group">
+                    <label class="job-form-label">Job Description</label>
+                    <textarea class="form-control" id="InputJobDescription" rows="3">
+                </textarea>
+                </div>
+
+                <!-- Skills input field -->
+                <div class="form-group">
+                    <label class="job-form-label">Skills</label>
+                    <input class="form-control" id="InputSkills" placeholder="Seperate the skills with comma">
+                </div>
+
+                <!-- Select domain -->
+                <div class="form-group">
+                    <label class="job-form-label">Select a Domain</label>
+                    <select class="dropdown-menu-style" id="select_domain" style="height: 35px;border-radius: 5px;">
+                        <option disabled selected>FILTER BY DOMAIN</option>
+                        <option>Artificial Intelligence and Machine Learning</option>
+                        <option>Robotic Process Automation (PA)</option>
+                        <option>Edge Computing</option>
+                        <option>Quantum Computing</option>
+                        <option>Virtual Reality and Augmented Reality</option>
+                        <option>Blockchain</option>
+                        <option>Internet of Things (loT)</option>
+                        <option>5G</option>
+                        <option>Cyber Security</option>
+                    </select>
+                </div>
+
+                <!-- Salary input field -->
+                <div class="form-group">
+                    <label class="job-form-label">Estimated Salary</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input class="form-control" id="InputJobSalary">
+                    </div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="post-job-btn" onclick="post_new_jobs()">Post</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="text-center">
+            This website is the intellectual property of Team 5
+        </p>
+    </div>
+
+</body>
+
+
+
+<script>
+
+    window.onload = function() {
+        getCompanyData()
+    }
+
+    function isEmpty(val) {
+        return (val === undefined || val == null || val.length <= 0) ? true : false;
+    }
+
+    function getCompanyData() {
+        // var companyId = document.getElementById('companyId')
+        var companyEmail = window.localStorage.getItem("companyEmail")
+
+        var dict_values = {companyEmail}
+        const s = JSON.stringify(dict_values); 
+
+        $.ajax({
+            url: "/get_company_homepage",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(s),
+            success: function (response) {
+                console.log(response)
+                document.write(response)
+
+                var profile = document.getElementById('company-profile')
+                var companyDetails = JSON.parse(document.getElementById("companyDetails").innerHTML);
+                
+                profile.innerHTML += `<div class="company-profile-component">
+                    <span class="glyphicon">&#xe008;</span>
+                    ` + companyDetails[0].Name + `
+                </div>
+
+                <div class="company-profile-component">
+                    <div class="description">
+                        ` + companyDetails[0].Description + `
+                    </div>
+                </div>
+
+                <div class="company-profile-component">
+                    <span class="glyphicon glyphicon-lock"></span>
+                    ` + window.localStorage.getItem('companyEmail') + `
+                </div>`
+
+                var jobs = document.getElementById('jobList')
+                var jobDetails = JSON.parse(document.getElementById('jobDetails').innerHTML);
+                for (let i=0;i<jobDetails.length; i++){
+                    jobs.innerHTML += `<div class="student-list">
+                        <div class="student-title">
+                            ` + jobDetails[i].Title + `
+                        </div>
+                        <br />
+                        <div class="student-info">
+                            <p><b>Description:</b> `+ jobDetails[i].Description +`</p>
+                            <p><b>Annual Compensation:</b> `+ jobDetails[i].Annual_compensation +`</p>
+                            <p><b>Required Skills:</b> `+ jobDetails[i].Required_skills +`</p>
+                            <p><b>Domain:</b> `+ jobDetails[i].Category +` </p>
+                        </div>
+                    </div>`
+
+                }
+            },
+            error: function (response) {
+                console.log(error)
+            }
+        });
+
+    }
+
+    //function to post new jobs
+    function post_new_jobs() {
+        const InputJobTitle = document.getElementById("InputJobTitle").value;
+        const InputJobDescription = document.getElementById("InputJobDescription").value;
+        const InputSkills = document.getElementById("InputSkills").value;
+        const select_domain = document.getElementById("select_domain").value;
+        const InputJobSalar = document.getElementById("InputJobSalary").value;
+        const CompanyEmail = window.localStorage.getItem("companyEmail")
+
+        const dict_values = { InputJobTitle, InputJobDescription, InputSkills, select_domain, InputJobSalar, CompanyEmail } //Pass the javascript variables to a dictionary.
+        const s = JSON.stringify(dict_values); // Stringify converts a JavaScript object or value to a JSON string
+        console.log(s); // Prints the variables to console window, which are in the JSON format
+        $.ajax({
+            url: "/post_new_jobs",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(s),
+            success: function (response) {
+                console.log(response)
+                document.write(response)
+            },
+            error: function (response) {
+                console.log(error)
+            }
+        });
+    }
+    
+    function companyLogout() {
+        window.localStorage.clear();
+        location.href = 'home'
+
+    }
+
+    function searchStudents() {
+        const domain = document.getElementById("studDomainDropdown").value
+        const skill = document.getElementById("studSkills").value
+        const education = document.getElementById("studEducationDropdown").value
+        console.log(domain)
+        console.log(skill)
+        console.log(education)
+        window.localStorage.setItem("domain", domain)
+        window.localStorage.setItem("skill", skill)
+        window.localStorage.setItem("education", education)
+
+        if (isEmpty(domain) || isEmpty(skill) || isEmpty(education)) {
+            alert("Please enter values for all filters")
+        } else {
+            location.href = 'companySearchResult'
+        }
+    }
+
+  
+
+</script>
+
+</html>

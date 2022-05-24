@@ -1,0 +1,187 @@
+.header {
+    background-color: #4f2378;
+    padding: 15px;
+    display: flex ;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.header-buttons-class {
+    padding: 10px;
+    
+}
+
+.head-btn {
+    background-color: #f1c300;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-title {
+    color: #f1c300;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+}
+
+.spacing {
+    margin-left: 10px;
+}
+
+.header-subtitle {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Lucida Handwriting';
+    padding: 10px;
+}
+
+.body-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.filter-result-main {
+    width: 700px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e4e4;
+    padding: 10px;
+    border-radius: 10px;
+    overflow:scroll;
+    height: 580px;
+}
+
+.filter-header {
+    width: '100%';
+    justify-content: center;
+}
+
+.profile {
+    margin-top: 20px;
+    width: 320px;
+    background-color:#e4e4e4;
+    height: 20rem;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.company-profile-component {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+.description {
+    font-size: medium;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.new-job-opening {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 320px;
+    background-color:#e4e4e4;
+    height: 58rem;
+    border-radius: 10px;
+}
+
+.job-opening-heading {
+    background-color: #f1c300;
+    justify-content: center;
+    padding: 10px;
+    height: 40px;
+    font-weight: 600;
+    font-size: large;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+
+.job-form-label {
+    margin-left: 5px;
+}
+
+.form-select-domain {
+    border-color: #c5c4c4;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+}
+
+.post-job-btn {
+    margin-top: 30px;
+    align-self: center;
+    width: 300px;
+    margin-left: 10px;
+    background-color: #4f2378;
+    color: #ffffff;
+    border-radius: 4px;
+    border-color: #4f2378;
+    height: 40px;
+}
+
+.filters_component {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-dropdown {
+    width: 100%;
+    height: 40px;
+    background: #EEEEEE;
+}
+
+.search_button {
+    background-color: #f1c300;
+    width: 150px;
+    height: 40px;
+}
+
+.search_input {
+    position: relative;
+    width: 680px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+
+.student-list {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.student-title {
+    font-size: 20px;
+    color: #f1c300;
+    font-weight: bold;
+}
+
+.student-info {
+    color: #4f2378;
+    font-size: 15px;
+}
+
+
+.footer {
+    background-color: #4f2378;
+    padding: 12px;
+    position: fixed;
+    bottom: 0px;
+    color: #f1c300;
+    width: 100%;
+    height: 40px;
+}

@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../static/styles/admin.css">
+    <!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}"/> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-buttons-class">
+            <div>
+                <button type="button" class="btn pull-right head-btn" onclick="adminLogout">Logout</button>
+            </div>
+        </div>
+        <div class="header-title">
+            GATORJOBS
+        </div>
+    </div>
+    <div class="admin-body">
+        <div class="welcome">
+            <h2>
+                WELCOME ADMIN!
+            </h2>
+        </div>
+        <br />
+        <div id="students" class="students" style="display: none;">
+            {{students}}
+        </div>
+        <div id="student-tile" class="student-tile">  
+        </div>
+        <div>
+            <div class="tab-content-list" id="myTabContent">
+                <div class="col-md-12">
+                    <div class="dropdown col-md-4">
+                        <select class="dropdown-menu-style" id="studDomainDropdown" style="height: 35px;border-radius: 5px;">
+                            <option disabled selected>FILTER BY DOMAIN</option>
+                            <option>Artificial Intelligence and Machine Learning</option>
+                            <option>Robotic Process Automation (PA)</option>
+                            <option>Edge Computing</option>
+                            <option>Quantum Computing</option>
+                            <option>Virtual Reality and Augmented Reality</option>
+                            <option>Blockchain</option>
+                            <option>Internet of Things (loT)</option>
+                            <option>5G</option>
+                            <option>Cyber Security</option>
+                        </select>
+                    </div>
+                    <div class="input-menu-style col-md-4">
+                        <input type="text" class="form-control" id="skills" aria-describedby="skills"
+                            placeholder="FILTER BY SKILLS">
+                    </div>
+                    <div class="dropdown col-md-3">
+                        <select class="dropdown-menu-style" id="jobProfileDropdown" style="height: 35px;border-radius: 5px;">
+                            <option selected disabled>FILTER BY EDUCATION LEVEL</option>
+                            <option>Software Engineer</option>
+                            <option>Accountant</option>
+                            <option>Tester</option>
+                            <option>Maintainence Engineer</option>
+                            <option>Network Engineer</option>
+                            <option>Data Scientist</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn head-btn" onclick="searchJobs()">Search</button>
+                    </div>
+                </div>
+                <br /> <br /><br />
+                <div id="job" class="job" style="display: none;">
+                    {{job}}
+                </div>
+                <div id="students-result" class="students-result col-md-12">
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="footer">
+            <p class="text-center">
+                This website is the intellectual property of Team 5
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+
+    window.onload = function() {
+        getStudentDetails();
+    }
+
+    function match(id) {
+        console.log("test1")
+        window.localStorage.setItem('jobId', id);
+        console.log("test2")
+        $.ajax({
+                url: "/match_method",
+                type: "GET",
+                contentType: "application/json",
+                success: function(response) {
+                    console.log(response)
+                    document.write(response)
+                    location.href = 'adminMatch'
+                },
+                error: function(response) {
+                    alert("Error matching student and job")
+                }
+            });
+    }
+
+    function getStudentDetails() {
+        console.log(window.localStorage.getItem('studentId'))
+        studentId = window.localStorage.getItem("studentId")
+        var dict_value = {studentId}
+        console.log("Student from store: ", studentId)
+
+        var studentObj = JSON.stringify(dict_value)
+        $.ajax({
+                url: "/get_student_by_id",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(studentObj),
+                success: function(response) {
+                    // console.log(response)
+                    document.write(response)
+                    var studs = document.getElementById("student-tile")
+                    var studentDetails = JSON.parse(document.getElementById("students").innerHTML);
+                    studs.innerHTML += `<div class="student-tile-title">
+                            `+ studentDetails[0].Name +`
+                        </div>
+                        <br />
+                        <div class="student-info">
+                            <p><b>Objective:</b> ` + studentDetails[0].Objectives + ` </p>
+                            <p><b>Degree:</b> `+ studentDetails[0].Degree +` </p>
+                            <p><b>GPA:</b> `+ studentDetails[0].GPA +` </p>
+                            <p><b>Domain:</b> `+ studentDetails[0].Category +` </p>
+                        </div>`
+                        // getAllJobDetails();
+                    var jobList = document.getElementById('students-result')
+                    jobs = JSON.parse(document.getElementById("job").innerHTML);
+                    console.log("------------ \n\n ", jobs)
+                    jobList.innerHTML += `Showing results of filtered jobs:`
+                    for (let i=0; i < jobs.length; i++) {
+                        console.log("Job_ID = " + jobs[i].Job_ID);
+                        jobList.innerHTML += `
+                            <div class="student-list">
+                                <div class="student-title">
+                                    ` + jobs[i].Title + `
+                                    <button class="btn pull-right head-btn" onclick="match(\'`+jobs[i].Job_ID+`\')">Match</button>
+                                </div>
+                                <br />
+                                <div class="student-info">
+                                    <p><b> Company Name: </b> ` + jobs[i].Name + ` </p>
+                                    <p><b>Description:</b> ` + jobs[i].Description + `</p>
+                                    <p><b>Annual Compensation:</b> ` + jobs[i].Annual_compensation + ` </p>
+                                    <p><b>Required Skills:</b> ` + jobs[i].Required_skills + ` </p>
+                                    <p><b>Domain:</b> ` + jobs[i].Category + ` </p>
+                                </div>
+                            </div>`
+                    }
+                },
+                error: function(response) {
+                    alert("Error getting student data")
+                }
+            });
+    }
+
+    function adminLogout() {
+        window.localStorage.clear();
+        location.href = 'home'
+    }
+</script>
+
+</html>

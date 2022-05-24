@@ -1,0 +1,99 @@
+.header {
+    background-color: #4f2378;
+    padding: 10px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    color: #f1c300;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+}
+
+.header-subtitle {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Lucida Handwriting';
+    padding: 10px;
+}
+
+.footer {
+    background-color: #4f2378;
+    padding: 12px;
+    position: fixed;
+    bottom: 0px;
+    color: #f1c300;
+    width: 100%;
+    height: 40px;
+}
+
+.center-div {
+    display: block;
+    width: 850px;  
+}
+
+.center-div-btn {
+    display: block;
+    width: 200px;  
+}
+
+.submit-btn {
+    margin: 10px;
+    background-color: #f1c300;
+    color: #fff;
+    font-weight: bold;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.radio-btn-text {
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.form-check-input {
+    padding: 10px;
+}
+
+.login-container {
+    background-color: #f1c300;
+    height: auto;
+    padding: 20px;
+}
+
+.text-label {
+    color: #fff;
+}
+
+.input-container {
+    padding: 10px;
+}
+
+.main-container {
+    align-items: center;
+}
+
+.login-container {
+    background-color: #9376ad;
+    height: auto;
+}
+
+.text-label-title {
+    color: #4f2378;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.input-field {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;;
+}

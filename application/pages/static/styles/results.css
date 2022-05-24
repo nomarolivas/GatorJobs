@@ -1,0 +1,13 @@
+.student_title {
+    background-color: lightgrey; 
+    padding: 10px;
+    margin: 20px;
+}
+
+.students {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}

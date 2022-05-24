@@ -1,0 +1,40 @@
+.meet {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 10vh;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.meet-title {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 5vh;   
+    background-color: #00ccff;
+    color: aliceblue;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.list{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.head-shot {
+    height: 200px; 
+    width: 200px; 
+    margin-left: 60px;
+}
+
+.what-we-do {
+    margin-left: 4vw;
+    width: 80vw;
+    margin-bottom: 4vh;
+    margin-top: 10vh;
+}

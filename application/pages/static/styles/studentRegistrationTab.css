@@ -1,0 +1,219 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.form-main-component {
+    margin-top: 2rem;
+    background-color:  #4f2378;
+    border-radius: 2rem;
+    padding: 10px;
+}
+
+.form-title-container {
+    width: 100%;
+    height: 90px;
+    padding: 0.1rem 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f1c300
+}
+
+.form-title-container h1 {
+    letter-spacing: 2px;
+    color: white;
+    font-size: 25px;
+}
+
+.form-title-container p {
+    color: #e8e8e8;
+    font-size: 10px;
+}
+
+.form-body-component {
+    display: flex;
+}
+
+.form-left-component {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid #f1c300;
+    padding: 1.25rem 0;
+    margin-right: 2rem;
+    padding-right: 1.8rem
+}
+
+.form-left-title-component {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.left-title-name {
+    padding: 6px 3px;
+    margin-bottom: 3px
+}
+
+.left-title-name h3{
+    margin-bottom: 3px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 10px;
+    letter-spacing: 1px
+}
+
+.progress-tab-component {
+    padding-top: 20px;
+}
+
+.progress-tab-component ul .active {
+    background-color: #f1c300;
+}
+
+.progress-tab-component ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: #e8e8e8;
+    padding: 0.5rem 0.6rem;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    font-size: 14px;
+    color:#4f2378;
+    margin-left: 0rem
+}
+
+.progress-tab-component ul li::before {
+    content: '';
+    width: 1px;
+    height: 11vh;
+    position: absolute;
+    background-color: #e8e8e8;
+}
+
+.progress-tab-component ul .active::before {
+    content: '';
+    width: 1px;
+    height: 11vh;
+    position: absolute;
+    background-color: #f1c300;
+}
+
+.form-right-component {
+    width: 65%;
+    display: flex;
+    padding: 1.5rem 1.5rem
+}
+
+.sub-title-container {
+    padding: 1rem 0 1.2rem 0;
+}
+
+.sub-title-container h3 {
+    letter-spacing: 2px;
+    color: #f1c300;
+    margin: 0.4rem 0
+}
+
+.sub-title-container p {
+    letter-spacing: 1px;
+    color: #e8e8e8;
+    margin: 0.4rem 0
+}
+
+.input-container-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    margin-right: 1rem;
+}
+
+.input-container-left input{
+    min-width: 250px;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.75rem;
+    border: 1px solid #f1c300;
+    margin-bottom: 1.2rem;
+    outline: none;
+    color: #000000;
+}
+
+.input-container-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-top: 1.25rem;;
+}
+
+.profile-pic-component {
+    border: 1px solid #f1c300;
+    margin-bottom: 13px;
+    background-color: #ffffff;
+    height: 74px;
+    border-radius: 10px;
+}
+
+.profile-pic-component label {
+    margin-top: 8px;;
+    margin-left: 8px;
+    color: #8d8d8d;
+    font-weight: 400;
+}
+
+.input-container-right input,textarea{
+    border: 1px solid #f1c300;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.2rem;
+    outline: none;
+    color: #000000;
+}
+
+.input-file {
+    border: 1px solid #ffffff !important;
+}
+
+.next-button{
+    background-color: #f1c300;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.btn-container {
+    display: flex;
+    width: '100%';
+}
+
+.prev-button {
+    margin-top: 30px;
+    color: #ffffff;
+    margin-right: 30px;
+    text-decoration: underline;
+}
+
+.active-form {
+    display: none
+}
+
+.objective {
+    margin-bottom: 10px;;
+}
+
+.terms-container {
+    color: #ffffff;
+    justify-content: center;
+    text-align: start;
+    display: flex;
+}
+
+.terms {
+    min-width: 30px !important;
+
+}

@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../static/styles/admin.css">
+    <!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}"/> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-buttons-class">
+            <div>
+                <button type="button" class="btn pull-right head-btn" onclick="studentLogout()">Logout</button>
+            </div>
+        </div>
+        <div class="header-title">
+            GATORJOBS
+        </div>
+    </div>
+    <div class="admin-body">
+        <div class="welcome">
+            <h2>
+                Results for your search:
+            </h2>
+        </div>
+        <div>
+            <div class="tab-content-list" id="myTabContent">
+                <div id="jobList" class="jobList" style="display: none;">
+                    {{jobList}}
+                </div>
+                <div id="job-result" class="job-result col-md-12">
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="footer">
+            <p class="text-center">
+                This website is the intellectual property of Team 5
+            </p>
+        </div>
+</body>
+
+<script>
+
+    window.onload = function() {
+        getStudentSearchResults();
+    }
+
+    function getStudentSearchResults() {
+
+        const domain = window.localStorage.getItem("domain")
+        const skill = window.localStorage.getItem("skill")
+        const profile = window.localStorage.getItem("profile")
+
+        var dict_values = { domain, skill, profile }
+        var studentParams = JSON.stringify(dict_values)
+        $.ajax({
+            url: "/filterJobDataForStudents",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(studentParams),
+            success: function (response) {
+                console.log(response)
+                window.document.write(response)
+                var jobs = document.getElementById('job-result')
+                jobDetails = JSON.parse(document.getElementById("jobList").innerHTML);
+                jobs.innerHTML += `Showing results of filtered jobs:`
+                for (let i=0; i < jobDetails.length; i++) {
+                    jobs.innerHTML += `<div class="student-list">
+                        <div class="student-title">
+                            <div>
+                                `+ jobDetails[i].Name +`
+                            </div>
+                        </div>
+                        <br />
+                        <div class="student-info">
+                            <p><b>Job Descirption:</b> ` + jobDetails[i].Description + `</p>
+                            <p><b>Required Skills:</b> `+ jobDetails[i].Required_skills +` </p>
+                            <p><b>Annual compensation:</b> `+ jobDetails[i].Annual_compensation +` </p>
+                            <p><b>Category:</b> `+ jobDetails[i].Category +` </p>
+                        </div>
+                    </div>`
+                }
+            },
+            error: function (response) {
+                console.log("Error getting data")
+            }
+        });
+    }
+
+    function studentLogout() {
+        // empty session storage here
+        window.localStorage.clear()
+        location.href = 'home'
+    }
+</script>
+
+</html>

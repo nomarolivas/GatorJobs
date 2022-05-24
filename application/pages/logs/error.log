@@ -1,0 +1,863 @@
+[Mon Apr 04 09:55:02.333436 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49189] mod_wsgi (pid=18981): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:55:02.333527 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49189] mod_wsgi (pid=18981): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:55:02.338871 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49189] Traceback (most recent call last):
+[Mon Apr 04 09:55:02.338954 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49189]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 09:55:02.338961 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49189]     with open(activate_this) as file_:
+[Mon Apr 04 09:55:02.339016 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49189] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 09:55:10.015434 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49188] mod_wsgi (pid=18981): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:55:10.015508 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49188] mod_wsgi (pid=18981): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:55:10.015602 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49188] Traceback (most recent call last):
+[Mon Apr 04 09:55:10.015626 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49188]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 09:55:10.015631 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49188]     with open(activate_this) as file_:
+[Mon Apr 04 09:55:10.015646 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49188] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 09:55:15.000479 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49192] mod_wsgi (pid=18981): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:55:15.000634 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49192] mod_wsgi (pid=18981): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:55:15.000748 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49192] Traceback (most recent call last):
+[Mon Apr 04 09:55:15.000770 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49192]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 09:55:15.000775 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49192]     with open(activate_this) as file_:
+[Mon Apr 04 09:55:15.000791 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49192] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 09:55:49.262093 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49195] mod_wsgi (pid=18981): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:55:49.262193 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49195] mod_wsgi (pid=18981): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:55:49.262291 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49195] Traceback (most recent call last):
+[Mon Apr 04 09:55:49.262315 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49195]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 09:55:49.262320 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49195]     with open(activate_this) as file_:
+[Mon Apr 04 09:55:49.262336 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49195] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 09:56:12.194386 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49205] mod_wsgi (pid=18981): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:56:12.194517 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49205] mod_wsgi (pid=18981): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:56:12.194623 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49205] Traceback (most recent call last):
+[Mon Apr 04 09:56:12.194646 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49205]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 09:56:12.194650 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49205]     with open(activate_this) as file_:
+[Mon Apr 04 09:56:12.194667 2022] [wsgi:error] [pid 18981] [remote 98.248.133.252:49205] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 09:57:56.850733 2022] [wsgi:error] [pid 18981] [remote 51.254.59.113:20089] mod_wsgi (pid=18981): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:57:56.850882 2022] [wsgi:error] [pid 18981] [remote 51.254.59.113:20089] mod_wsgi (pid=18981): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:57:56.851058 2022] [wsgi:error] [pid 18981] [remote 51.254.59.113:20089] Traceback (most recent call last):
+[Mon Apr 04 09:57:56.851100 2022] [wsgi:error] [pid 18981] [remote 51.254.59.113:20089]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 09:57:56.851112 2022] [wsgi:error] [pid 18981] [remote 51.254.59.113:20089]     with open(activate_this) as file_:
+[Mon Apr 04 09:57:56.851138 2022] [wsgi:error] [pid 18981] [remote 51.254.59.113:20089] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 09:58:39.429399 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49389] mod_wsgi (pid=19137): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:58:39.429513 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49389] mod_wsgi (pid=19137): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:58:39.434514 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49389] Traceback (most recent call last):
+[Mon Apr 04 09:58:39.434572 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49389]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 09:58:39.434582 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49389]     with open(activate_this) as file_:
+[Mon Apr 04 09:58:39.434603 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49389] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 09:58:45.540989 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49388] mod_wsgi (pid=19137): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:58:45.541070 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49388] mod_wsgi (pid=19137): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:58:45.541161 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49388] Traceback (most recent call last):
+[Mon Apr 04 09:58:45.541187 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49388]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 09:58:45.541206 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49388]     with open(activate_this) as file_:
+[Mon Apr 04 09:58:45.541230 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49388] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 09:58:49.427086 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49400] mod_wsgi (pid=19137): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:58:49.427171 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49400] mod_wsgi (pid=19137): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 09:58:49.427298 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49400] Traceback (most recent call last):
+[Mon Apr 04 09:58:49.427338 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49400]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 09:58:49.427347 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49400]     with open(activate_this) as file_:
+[Mon Apr 04 09:58:49.427372 2022] [wsgi:error] [pid 19137] [remote 98.248.133.252:49400] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 10:01:59.254972 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49624] mod_wsgi (pid=19209): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:01:59.255150 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49624] mod_wsgi (pid=19209): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:01:59.260144 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49624] Traceback (most recent call last):
+[Mon Apr 04 10:01:59.260187 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49624]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 10:01:59.260193 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49624]     with open(activate_this) as file_:
+[Mon Apr 04 10:01:59.260208 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49624] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 10:02:03.630549 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49625] mod_wsgi (pid=19209): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:02:03.630622 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49625] mod_wsgi (pid=19209): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:02:03.630712 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49625] Traceback (most recent call last):
+[Mon Apr 04 10:02:03.630737 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49625]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 10:02:03.630742 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49625]     with open(activate_this) as file_:
+[Mon Apr 04 10:02:03.630758 2022] [wsgi:error] [pid 19209] [remote 98.248.133.252:49625] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 10:04:08.128656 2022] [wsgi:error] [pid 19209] [remote 45.155.204.146:46822] mod_wsgi (pid=19209): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:04:08.128783 2022] [wsgi:error] [pid 19209] [remote 45.155.204.146:46822] mod_wsgi (pid=19209): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:04:08.128896 2022] [wsgi:error] [pid 19209] [remote 45.155.204.146:46822] Traceback (most recent call last):
+[Mon Apr 04 10:04:08.128931 2022] [wsgi:error] [pid 19209] [remote 45.155.204.146:46822]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 10:04:08.128936 2022] [wsgi:error] [pid 19209] [remote 45.155.204.146:46822]     with open(activate_this) as file_:
+[Mon Apr 04 10:04:08.128953 2022] [wsgi:error] [pid 19209] [remote 45.155.204.146:46822] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 10:07:12.374607 2022] [wsgi:error] [pid 19303] [remote 98.248.133.252:61282] mod_wsgi (pid=19303): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:07:12.374678 2022] [wsgi:error] [pid 19303] [remote 98.248.133.252:61282] mod_wsgi (pid=19303): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:07:12.379419 2022] [wsgi:error] [pid 19303] [remote 98.248.133.252:61282] Traceback (most recent call last):
+[Mon Apr 04 10:07:12.379458 2022] [wsgi:error] [pid 19303] [remote 98.248.133.252:61282]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 10:07:12.379464 2022] [wsgi:error] [pid 19303] [remote 98.248.133.252:61282]     with open(activate_this) as file_:
+[Mon Apr 04 10:07:12.379479 2022] [wsgi:error] [pid 19303] [remote 98.248.133.252:61282] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 10:07:36.380974 2022] [wsgi:error] [pid 19303] [remote 45.146.164.234:61443] mod_wsgi (pid=19303): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:07:36.381077 2022] [wsgi:error] [pid 19303] [remote 45.146.164.234:61443] mod_wsgi (pid=19303): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:07:36.381169 2022] [wsgi:error] [pid 19303] [remote 45.146.164.234:61443] Traceback (most recent call last):
+[Mon Apr 04 10:07:36.381194 2022] [wsgi:error] [pid 19303] [remote 45.146.164.234:61443]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 10:07:36.381206 2022] [wsgi:error] [pid 19303] [remote 45.146.164.234:61443]     with open(activate_this) as file_:
+[Mon Apr 04 10:07:36.381230 2022] [wsgi:error] [pid 19303] [remote 45.146.164.234:61443] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 10:07:55.686680 2022] [wsgi:error] [pid 19303] [remote 167.249.102.193:19136] mod_wsgi (pid=19303): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:07:55.686748 2022] [wsgi:error] [pid 19303] [remote 167.249.102.193:19136] mod_wsgi (pid=19303): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:07:55.686845 2022] [wsgi:error] [pid 19303] [remote 167.249.102.193:19136] Traceback (most recent call last):
+[Mon Apr 04 10:07:55.686868 2022] [wsgi:error] [pid 19303] [remote 167.249.102.193:19136]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 10:07:55.686894 2022] [wsgi:error] [pid 19303] [remote 167.249.102.193:19136]     with open(activate_this) as file_:
+[Mon Apr 04 10:07:55.686911 2022] [wsgi:error] [pid 19303] [remote 167.249.102.193:19136] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 10:10:14.822157 2022] [wsgi:error] [pid 19515] [remote 98.248.133.252:61382] mod_wsgi (pid=19515): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:10:14.822267 2022] [wsgi:error] [pid 19515] [remote 98.248.133.252:61382] mod_wsgi (pid=19515): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:10:14.827048 2022] [wsgi:error] [pid 19515] [remote 98.248.133.252:61382] Traceback (most recent call last):
+[Mon Apr 04 10:10:14.827120 2022] [wsgi:error] [pid 19515] [remote 98.248.133.252:61382]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 10:10:14.827125 2022] [wsgi:error] [pid 19515] [remote 98.248.133.252:61382]     with open(activate_this) as file_:
+[Mon Apr 04 10:10:14.827143 2022] [wsgi:error] [pid 19515] [remote 98.248.133.252:61382] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 10:42:58.432032 2022] [wsgi:error] [pid 19515] [remote 190.4.51.242:59067] mod_wsgi (pid=19515): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:42:58.443001 2022] [wsgi:error] [pid 19515] [remote 190.4.51.242:59067] mod_wsgi (pid=19515): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 10:42:58.443166 2022] [wsgi:error] [pid 19515] [remote 190.4.51.242:59067] Traceback (most recent call last):
+[Mon Apr 04 10:42:58.443203 2022] [wsgi:error] [pid 19515] [remote 190.4.51.242:59067]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 10:42:58.443209 2022] [wsgi:error] [pid 19515] [remote 190.4.51.242:59067]     with open(activate_this) as file_:
+[Mon Apr 04 10:42:58.443228 2022] [wsgi:error] [pid 19515] [remote 190.4.51.242:59067] PermissionError: [Errno 13] Permission denied: '/root/.local/share/virtualenvs/pages-djyMh_J0/bin/activate_this.py'
+[Mon Apr 04 11:03:44.284926 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276] mod_wsgi (pid=21637): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:03:44.284999 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276] mod_wsgi (pid=21637): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:03:44.289946 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276] Traceback (most recent call last):
+[Mon Apr 04 11:03:44.289980 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276]   File "<string>", line 9, in <module>
+[Mon Apr 04 11:03:44.289996 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276] NameError: name '__file__' is not defined
+[Mon Apr 04 11:03:44.290004 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276] 
+[Mon Apr 04 11:03:44.290008 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276] During handling of the above exception, another exception occurred:
+[Mon Apr 04 11:03:44.290013 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276] 
+[Mon Apr 04 11:03:44.290018 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276] Traceback (most recent call last):
+[Mon Apr 04 11:03:44.290031 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 6, in <module>
+[Mon Apr 04 11:03:44.290036 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276]     exec(file_.read(), dict(_file_=activate_this))
+[Mon Apr 04 11:03:44.290042 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276]   File "<string>", line 12, in <module>
+[Mon Apr 04 11:03:44.290051 2022] [wsgi:error] [pid 21637] [remote 98.248.133.252:49276] AssertionError: You must run this like execfile('path/to/activate_this.py', dict(__file__='path/to/activate_this.py'))
+[Mon Apr 04 11:05:50.466781 2022] [wsgi:error] [pid 21708] [remote 98.248.133.252:49346] mod_wsgi (pid=21708): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:05:50.466850 2022] [wsgi:error] [pid 21708] [remote 98.248.133.252:49346] mod_wsgi (pid=21708): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:05:50.471656 2022] [wsgi:error] [pid 21708] [remote 98.248.133.252:49346] Traceback (most recent call last):
+[Mon Apr 04 11:05:50.471693 2022] [wsgi:error] [pid 21708] [remote 98.248.133.252:49346]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 11:05:50.471699 2022] [wsgi:error] [pid 21708] [remote 98.248.133.252:49346]     with open(activate_this) as file_:
+[Mon Apr 04 11:05:50.471713 2022] [wsgi:error] [pid 21708] [remote 98.248.133.252:49346] FileNotFoundError: [Errno 2] No such file or directory: '/MyEnv/bin/activate_this.py'
+[Mon Apr 04 11:08:39.143995 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438] mod_wsgi (pid=21797): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:08:39.144060 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438] mod_wsgi (pid=21797): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:08:39.149553 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438] Traceback (most recent call last):
+[Mon Apr 04 11:08:39.149594 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438]   File "<string>", line 9, in <module>
+[Mon Apr 04 11:08:39.149611 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438] NameError: name '__file__' is not defined
+[Mon Apr 04 11:08:39.149618 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438] 
+[Mon Apr 04 11:08:39.149623 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438] During handling of the above exception, another exception occurred:
+[Mon Apr 04 11:08:39.149627 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438] 
+[Mon Apr 04 11:08:39.149633 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438] Traceback (most recent call last):
+[Mon Apr 04 11:08:39.149646 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 6, in <module>
+[Mon Apr 04 11:08:39.149651 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438]     exec(file_.read(), dict(_file_=activate_this))
+[Mon Apr 04 11:08:39.149656 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438]   File "<string>", line 12, in <module>
+[Mon Apr 04 11:08:39.149666 2022] [wsgi:error] [pid 21797] [remote 98.248.133.252:49438] AssertionError: You must run this like execfile('path/to/activate_this.py', dict(__file__='path/to/activate_this.py'))
+[Mon Apr 04 11:10:32.174611 2022] [wsgi:error] [pid 21939] [remote 98.248.133.252:49502] mod_wsgi (pid=21939): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:10:32.174681 2022] [wsgi:error] [pid 21939] [remote 98.248.133.252:49502] mod_wsgi (pid=21939): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:10:32.179453 2022] [wsgi:error] [pid 21939] [remote 98.248.133.252:49502] Traceback (most recent call last):
+[Mon Apr 04 11:10:32.179492 2022] [wsgi:error] [pid 21939] [remote 98.248.133.252:49502]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 6, in <module>
+[Mon Apr 04 11:10:32.179498 2022] [wsgi:error] [pid 21939] [remote 98.248.133.252:49502]     execfile(activate_this, dict(_file_=activate_this))
+[Mon Apr 04 11:10:32.179516 2022] [wsgi:error] [pid 21939] [remote 98.248.133.252:49502] NameError: name 'execfile' is not defined
+[Mon Apr 04 11:13:18.866737 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604] mod_wsgi (pid=22008): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:13:18.866812 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604] mod_wsgi (pid=22008): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:13:18.871899 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604] Traceback (most recent call last):
+[Mon Apr 04 11:13:18.871950 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604]   File "<string>", line 9, in <module>
+[Mon Apr 04 11:13:18.871965 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604] NameError: name '__file__' is not defined
+[Mon Apr 04 11:13:18.871972 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604] 
+[Mon Apr 04 11:13:18.871976 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604] During handling of the above exception, another exception occurred:
+[Mon Apr 04 11:13:18.871980 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604] 
+[Mon Apr 04 11:13:18.871985 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604] Traceback (most recent call last):
+[Mon Apr 04 11:13:18.871997 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 6, in <module>
+[Mon Apr 04 11:13:18.872001 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604]     exec(file_.read(), dict(_file_=activate_this))
+[Mon Apr 04 11:13:18.872007 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604]   File "<string>", line 12, in <module>
+[Mon Apr 04 11:13:18.872016 2022] [wsgi:error] [pid 22008] [remote 98.248.133.252:49604] AssertionError: You must run this like execfile('path/to/activate_this.py', dict(__file__='path/to/activate_this.py'))
+[Mon Apr 04 11:14:30.504676 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537] mod_wsgi (pid=22008): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:14:30.504781 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537] mod_wsgi (pid=22008): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:14:30.505067 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537] Traceback (most recent call last):
+[Mon Apr 04 11:14:30.505108 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537]   File "<string>", line 9, in <module>
+[Mon Apr 04 11:14:30.505126 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537] NameError: name '__file__' is not defined
+[Mon Apr 04 11:14:30.505134 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537] 
+[Mon Apr 04 11:14:30.505138 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537] During handling of the above exception, another exception occurred:
+[Mon Apr 04 11:14:30.505142 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537] 
+[Mon Apr 04 11:14:30.505148 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537] Traceback (most recent call last):
+[Mon Apr 04 11:14:30.505162 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 11:14:30.505167 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537]     exec(open("/home/user/MyEnv/bin/activate_this.py").read(), dict(_file_="/home/user/MyEnv/bin/activate_this.py"))
+[Mon Apr 04 11:14:30.505174 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537]   File "<string>", line 12, in <module>
+[Mon Apr 04 11:14:30.505183 2022] [wsgi:error] [pid 22008] [remote 182.253.140.162:50537] AssertionError: You must run this like execfile('path/to/activate_this.py', dict(__file__='path/to/activate_this.py'))
+[Mon Apr 04 11:14:36.867434 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687] mod_wsgi (pid=22058): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:14:36.867507 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687] mod_wsgi (pid=22058): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Mon Apr 04 11:14:36.872984 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687] Traceback (most recent call last):
+[Mon Apr 04 11:14:36.873024 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687]   File "<string>", line 9, in <module>
+[Mon Apr 04 11:14:36.873051 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687] NameError: name '__file__' is not defined
+[Mon Apr 04 11:14:36.873059 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687] 
+[Mon Apr 04 11:14:36.873063 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687] During handling of the above exception, another exception occurred:
+[Mon Apr 04 11:14:36.873066 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687] 
+[Mon Apr 04 11:14:36.873071 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687] Traceback (most recent call last):
+[Mon Apr 04 11:14:36.873084 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 5, in <module>
+[Mon Apr 04 11:14:36.873089 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687]     exec(open("/home/user/MyEnv/bin/activate_this.py").read(), dict(_file_="/home/user/MyEnv/bin/activate_this.py"))
+[Mon Apr 04 11:14:36.873095 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687]   File "<string>", line 12, in <module>
+[Mon Apr 04 11:14:36.873104 2022] [wsgi:error] [pid 22058] [remote 98.248.133.252:49687] AssertionError: You must run this like execfile('path/to/activate_this.py', dict(__file__='path/to/activate_this.py'))
+[Tue Apr 05 02:56:48.979710 2022] [wsgi:error] [pid 3662] [client 49.143.32.6:2433] mod_wsgi (pid=3662): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Tue Apr 05 05:41:51.966280 2022] [core:error] [pid 1012] [client 45.155.204.146:45790] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Tue Apr 05 22:44:22.137131 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384] [2022-04-05 22:44:22,130] ERROR in app: Exception on / [GET]
+[Tue Apr 05 22:44:22.151998 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384] Traceback (most recent call last):
+[Tue Apr 05 22:44:22.152024 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Tue Apr 05 22:44:22.152032 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     response = self.full_dispatch_request()
+[Tue Apr 05 22:44:22.152039 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Tue Apr 05 22:44:22.152045 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     rv = self.handle_user_exception(e)
+[Tue Apr 05 22:44:22.152051 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Tue Apr 05 22:44:22.152057 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     rv = self.dispatch_request()
+[Tue Apr 05 22:44:22.152064 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Tue Apr 05 22:44:22.152070 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Tue Apr 05 22:44:22.152076 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 60, in home
+[Tue Apr 05 22:44:22.152081 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     return render_template('homepage.html')
+[Tue Apr 05 22:44:22.152087 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 148, in render_template
+[Tue Apr 05 22:44:22.152096 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Tue Apr 05 22:44:22.152102 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1068, in get_or_select_template
+[Tue Apr 05 22:44:22.152136 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     return self.get_template(template_name_or_list, parent, globals)
+[Tue Apr 05 22:44:22.152142 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 997, in get_template
+[Tue Apr 05 22:44:22.152147 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     return self._load_template(name, globals)
+[Tue Apr 05 22:44:22.152153 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 958, in _load_template
+[Tue Apr 05 22:44:22.152158 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     template = self.loader.load(self, name, self.make_globals(globals))
+[Tue Apr 05 22:44:22.152162 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 125, in load
+[Tue Apr 05 22:44:22.152166 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     source, filename, uptodate = self.get_source(environment, name)
+[Tue Apr 05 22:44:22.152170 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 59, in get_source
+[Tue Apr 05 22:44:22.152174 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     return self._get_source_fast(environment, template)
+[Tue Apr 05 22:44:22.152178 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 95, in _get_source_fast
+[Tue Apr 05 22:44:22.152182 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384]     raise TemplateNotFound(template)
+[Tue Apr 05 22:44:22.152185 2022] [wsgi:error] [pid 24034] [remote 98.248.133.252:56384] jinja2.exceptions.TemplateNotFound: homepage.html
+[Tue Apr 05 22:46:09.909443 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508] [2022-04-05 22:46:09,907] ERROR in app: Exception on / [GET]
+[Tue Apr 05 22:46:09.909503 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508] Traceback (most recent call last):
+[Tue Apr 05 22:46:09.909511 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Tue Apr 05 22:46:09.909518 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     response = self.full_dispatch_request()
+[Tue Apr 05 22:46:09.909524 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Tue Apr 05 22:46:09.909531 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     rv = self.handle_user_exception(e)
+[Tue Apr 05 22:46:09.909537 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Tue Apr 05 22:46:09.909544 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     rv = self.dispatch_request()
+[Tue Apr 05 22:46:09.909550 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Tue Apr 05 22:46:09.909557 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Tue Apr 05 22:46:09.909563 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 60, in home
+[Tue Apr 05 22:46:09.909569 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     return render_template('homepage.html')
+[Tue Apr 05 22:46:09.909574 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 148, in render_template
+[Tue Apr 05 22:46:09.909581 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Tue Apr 05 22:46:09.909609 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1068, in get_or_select_template
+[Tue Apr 05 22:46:09.909615 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     return self.get_template(template_name_or_list, parent, globals)
+[Tue Apr 05 22:46:09.909620 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 997, in get_template
+[Tue Apr 05 22:46:09.909626 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     return self._load_template(name, globals)
+[Tue Apr 05 22:46:09.909631 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 958, in _load_template
+[Tue Apr 05 22:46:09.909637 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     template = self.loader.load(self, name, self.make_globals(globals))
+[Tue Apr 05 22:46:09.909643 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 125, in load
+[Tue Apr 05 22:46:09.909648 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     source, filename, uptodate = self.get_source(environment, name)
+[Tue Apr 05 22:46:09.909653 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 59, in get_source
+[Tue Apr 05 22:46:09.909659 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     return self._get_source_fast(environment, template)
+[Tue Apr 05 22:46:09.909665 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 95, in _get_source_fast
+[Tue Apr 05 22:46:09.909671 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508]     raise TemplateNotFound(template)
+[Tue Apr 05 22:46:09.909676 2022] [wsgi:error] [pid 24116] [remote 98.248.133.252:56508] jinja2.exceptions.TemplateNotFound: homepage.html
+[Tue Apr 05 23:17:25.592271 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:17:25.592389 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:17:25.592903 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026] Traceback (most recent call last):
+[Tue Apr 05 23:17:25.592944 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:17:25.592950 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026]     from app import app as application
+[Tue Apr 05 23:17:25.592957 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:17:25.592962 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026]     import AdminLogin
+[Tue Apr 05 23:17:25.592968 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:17:25.592973 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026]     from __main__ import app
+[Tue Apr 05 23:17:25.592990 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55026] ImportError: cannot import name 'app' from '__main__' (unknown location)
+[Tue Apr 05 23:17:34.534213 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:17:34.534329 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:17:34.534479 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025] Traceback (most recent call last):
+[Tue Apr 05 23:17:34.534533 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:17:34.534542 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025]     from app import app as application
+[Tue Apr 05 23:17:34.534550 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:17:34.534555 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025]     import AdminLogin
+[Tue Apr 05 23:17:34.534560 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:17:34.534565 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025]     from __main__ import app
+[Tue Apr 05 23:17:34.534580 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:55025] ImportError: cannot import name 'app' from '__main__' (unknown location)
+[Tue Apr 05 23:25:58.066879 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:25:58.067000 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:25:58.067146 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342] Traceback (most recent call last):
+[Tue Apr 05 23:25:58.067192 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:25:58.067201 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342]     from app import app as application
+[Tue Apr 05 23:25:58.067212 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:25:58.067223 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342]     import AdminLogin
+[Tue Apr 05 23:25:58.067244 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:25:58.067251 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342]     from __main__ import app
+[Tue Apr 05 23:25:58.067274 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52342] ImportError: cannot import name 'app' from '__main__' (unknown location)
+[Tue Apr 05 23:26:28.544856 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:26:28.544929 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:26:28.545027 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343] Traceback (most recent call last):
+[Tue Apr 05 23:26:28.545065 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:26:28.545073 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343]     from app import app as application
+[Tue Apr 05 23:26:28.545084 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:26:28.545091 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343]     import AdminLogin
+[Tue Apr 05 23:26:28.545115 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:26:28.545121 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343]     from __main__ import app
+[Tue Apr 05 23:26:28.545144 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:52343] ImportError: cannot import name 'app' from '__main__' (unknown location)
+[Tue Apr 05 23:31:26.621449 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:31:26.665977 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:31:26.666445 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062] Traceback (most recent call last):
+[Tue Apr 05 23:31:26.666487 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:31:26.666493 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062]     from app import app as application
+[Tue Apr 05 23:31:26.666501 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:31:26.666506 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062]     import AdminLogin
+[Tue Apr 05 23:31:26.666513 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 8, in <module>
+[Tue Apr 05 23:31:26.666518 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062]     app.config['MYSQL_HOST'] = 'localhost'
+[Tue Apr 05 23:31:26.666544 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59062] AttributeError: module 'app' has no attribute 'config'
+[Tue Apr 05 23:31:53.017159 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:31:53.017219 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:31:53.017422 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061] Traceback (most recent call last):
+[Tue Apr 05 23:31:53.017451 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:31:53.017456 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061]     from app import app as application
+[Tue Apr 05 23:31:53.017464 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:31:53.017469 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061]     import AdminLogin
+[Tue Apr 05 23:31:53.017475 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:31:53.017480 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061]     from app import app
+[Tue Apr 05 23:31:53.017494 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59061] ImportError: cannot import name 'app' from 'app' (/var/www/csc648-02-sp22-team05/application/pages/app.py)
+[Tue Apr 05 23:35:03.664391 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59294] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:35:03.664451 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59294] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:35:03.664684 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59294] Traceback (most recent call last):
+[Tue Apr 05 23:35:03.664711 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59294]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:35:03.664716 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59294]     from app import app as application
+[Tue Apr 05 23:35:03.664723 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59294]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:35:03.664727 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59294]     import pages.AdminLogin
+[Tue Apr 05 23:35:03.664742 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59294] ModuleNotFoundError: No module named 'pages'
+[Tue Apr 05 23:35:37.012298 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:35:37.012355 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:35:37.012543 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293] Traceback (most recent call last):
+[Tue Apr 05 23:35:37.012571 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:35:37.012577 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293]     from app import app as application
+[Tue Apr 05 23:35:37.012584 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:35:37.012589 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293]     import AdminLogin
+[Tue Apr 05 23:35:37.012595 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:35:37.012600 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293]     from app import app
+[Tue Apr 05 23:35:37.012614 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59293] ImportError: cannot import name 'app' from 'app' (/var/www/csc648-02-sp22-team05/application/pages/app.py)
+[Tue Apr 05 23:36:04.931795 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:36:04.931847 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:36:04.932045 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330] Traceback (most recent call last):
+[Tue Apr 05 23:36:04.932073 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:36:04.932079 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330]     from app import app as application
+[Tue Apr 05 23:36:04.932086 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:36:04.932091 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330]     import AdminLogin
+[Tue Apr 05 23:36:04.932097 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 8, in <module>
+[Tue Apr 05 23:36:04.932102 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330]     app.config['MYSQL_HOST'] = 'localhost'
+[Tue Apr 05 23:36:04.932123 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59330] AttributeError: module 'app' has no attribute 'config'
+[Tue Apr 05 23:36:33.005881 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:36:33.005935 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:36:33.099235 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361] Traceback (most recent call last):
+[Tue Apr 05 23:36:33.099294 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:36:33.099300 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]     from app import app as application
+[Tue Apr 05 23:36:33.099308 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:36:33.099313 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]     import AdminLogin
+[Tue Apr 05 23:36:33.099319 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 12, in <module>
+[Tue Apr 05 23:36:33.099324 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]     mysql = MySQL(app)
+[Tue Apr 05 23:36:33.099337 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]   File "/usr/local/lib/python3.7/dist-packages/flask_mysqldb/__init__.py", line 10, in __init__
+[Tue Apr 05 23:36:33.099342 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]     self.init_app(app)
+[Tue Apr 05 23:36:33.099348 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]   File "/usr/local/lib/python3.7/dist-packages/flask_mysqldb/__init__.py", line 22, in init_app
+[Tue Apr 05 23:36:33.099353 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361]     app.config.setdefault("MYSQL_HOST", "localhost")
+[Tue Apr 05 23:36:33.099370 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59361] AttributeError: module 'app' has no attribute 'config'
+[Tue Apr 05 23:37:22.759919 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:37:22.759974 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:37:22.760192 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384] Traceback (most recent call last):
+[Tue Apr 05 23:37:22.760221 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:37:22.760227 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384]     from app import app as application
+[Tue Apr 05 23:37:22.760235 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:37:22.760240 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384]     import AdminLogin
+[Tue Apr 05 23:37:22.760246 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 37, in <module>
+[Tue Apr 05 23:37:22.760251 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384]     @app.route('/admin_login', methods=['POST'])
+[Tue Apr 05 23:37:22.760264 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59384] AttributeError: module 'app' has no attribute 'route'
+[Tue Apr 05 23:39:38.072108 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568] mod_wsgi (pid=25435): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:39:38.072173 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568] mod_wsgi (pid=25435): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:39:38.072385 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568] Traceback (most recent call last):
+[Tue Apr 05 23:39:38.072413 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:39:38.072418 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568]     from app import app as application
+[Tue Apr 05 23:39:38.072425 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:39:38.072429 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568]     import AdminLogin
+[Tue Apr 05 23:39:38.072435 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 37, in <module>
+[Tue Apr 05 23:39:38.072439 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568]     @app.route('/admin_login', methods=['POST'])
+[Tue Apr 05 23:39:38.072454 2022] [wsgi:error] [pid 25435] [remote 98.248.133.252:59568] AttributeError: module 'app' has no attribute 'route'
+[Tue Apr 05 23:43:07.798696 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59773] mod_wsgi (pid=26370): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:43:07.798913 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59773] mod_wsgi (pid=26370): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:43:07.803410 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59773] Traceback (most recent call last):
+[Tue Apr 05 23:43:07.803454 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59773]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:43:07.803461 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59773]     from app import app as application
+[Tue Apr 05 23:43:07.803486 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59773] ModuleNotFoundError: No module named 'app'
+[Tue Apr 05 23:43:48.366936 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59772] mod_wsgi (pid=26370): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:43:48.367005 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59772] mod_wsgi (pid=26370): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:43:48.367076 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59772] Traceback (most recent call last):
+[Tue Apr 05 23:43:48.367100 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59772]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:43:48.367106 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59772]     from app import app as application
+[Tue Apr 05 23:43:48.367121 2022] [wsgi:error] [pid 26370] [remote 98.248.133.252:59772] ModuleNotFoundError: No module named 'app'
+[Tue Apr 05 23:44:38.950039 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865] mod_wsgi (pid=26474): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:44:38.950120 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865] mod_wsgi (pid=26474): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:44:38.950565 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865] Traceback (most recent call last):
+[Tue Apr 05 23:44:38.950603 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:44:38.950622 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865]     from __init__ import app as application
+[Tue Apr 05 23:44:38.950629 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865]   File "/var/www/csc648-02-sp22-team05/application/pages/__init__.py", line 3, in <module>
+[Tue Apr 05 23:44:38.950633 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865]     import AdminLogin
+[Tue Apr 05 23:44:38.950645 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:44:38.950649 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865]     from __init__ import app
+[Tue Apr 05 23:44:38.950668 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59865] ImportError: cannot import name 'app' from '__init__' (/var/www/csc648-02-sp22-team05/application/pages/__init__.py)
+[Tue Apr 05 23:45:36.832355 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930] mod_wsgi (pid=26474): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:45:36.832438 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930] mod_wsgi (pid=26474): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:45:36.832548 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930] Traceback (most recent call last):
+[Tue Apr 05 23:45:36.832580 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:45:36.832586 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930]     from __init__ import app as application
+[Tue Apr 05 23:45:36.832593 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930]   File "/var/www/csc648-02-sp22-team05/application/pages/__init__.py", line 3, in <module>
+[Tue Apr 05 23:45:36.832598 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930]     import AdminLogin
+[Tue Apr 05 23:45:36.832604 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:45:36.832609 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930]     from __init__ import app
+[Tue Apr 05 23:45:36.832624 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59930] ImportError: cannot import name 'app' from '__init__' (/var/www/csc648-02-sp22-team05/application/pages/__init__.py)
+[Tue Apr 05 23:45:38.619294 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929] mod_wsgi (pid=26474): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:45:38.619356 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929] mod_wsgi (pid=26474): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:45:38.619442 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929] Traceback (most recent call last):
+[Tue Apr 05 23:45:38.619468 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:45:38.619474 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929]     from __init__ import app as application
+[Tue Apr 05 23:45:38.619481 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929]   File "/var/www/csc648-02-sp22-team05/application/pages/__init__.py", line 3, in <module>
+[Tue Apr 05 23:45:38.619485 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929]     import AdminLogin
+[Tue Apr 05 23:45:38.619503 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:45:38.619519 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929]     from __init__ import app
+[Tue Apr 05 23:45:38.619534 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59929] ImportError: cannot import name 'app' from '__init__' (/var/www/csc648-02-sp22-team05/application/pages/__init__.py)
+[Tue Apr 05 23:46:22.278336 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932] mod_wsgi (pid=26474): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:46:22.278425 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932] mod_wsgi (pid=26474): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:46:22.278780 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932] Traceback (most recent call last):
+[Tue Apr 05 23:46:22.278810 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:46:22.278815 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932]     from app import app as application
+[Tue Apr 05 23:46:22.278822 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:46:22.278827 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932]     import AdminLogin
+[Tue Apr 05 23:46:22.278833 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 39, in <module>
+[Tue Apr 05 23:46:22.278844 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932]     @app.route('/admin_login', methods=['POST'])
+[Tue Apr 05 23:46:22.278879 2022] [wsgi:error] [pid 26474] [remote 98.248.133.252:59932] NameError: name 'app' is not defined
+[Tue Apr 05 23:51:52.754938 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664] mod_wsgi (pid=26847): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:51:52.833419 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664] mod_wsgi (pid=26847): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:51:52.833921 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664] Traceback (most recent call last):
+[Tue Apr 05 23:51:52.833998 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:51:52.834007 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664]     from app import app as application
+[Tue Apr 05 23:51:52.834015 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:51:52.834020 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664]     import AdminLogin
+[Tue Apr 05 23:51:52.834026 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:51:52.834031 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664]     from app import return_app
+[Tue Apr 05 23:51:52.834052 2022] [wsgi:error] [pid 26847] [remote 98.248.133.252:54664] ImportError: cannot import name 'return_app' from 'app' (/var/www/csc648-02-sp22-team05/application/pages/app.py)
+[Tue Apr 05 23:52:32.723720 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699] mod_wsgi (pid=26889): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:52:32.725559 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699] mod_wsgi (pid=26889): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Tue Apr 05 23:52:32.726088 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699] Traceback (most recent call last):
+[Tue Apr 05 23:52:32.726139 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Tue Apr 05 23:52:32.726145 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699]     from app import app as application
+[Tue Apr 05 23:52:32.726151 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 3, in <module>
+[Tue Apr 05 23:52:32.726156 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699]     import AdminLogin
+[Tue Apr 05 23:52:32.726162 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699]   File "/var/www/csc648-02-sp22-team05/application/pages/AdminLogin.py", line 7, in <module>
+[Tue Apr 05 23:52:32.726166 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699]     from app import return_app
+[Tue Apr 05 23:52:32.726185 2022] [wsgi:error] [pid 26889] [remote 98.248.133.252:54699] ImportError: cannot import name 'return_app' from 'app' (/var/www/csc648-02-sp22-team05/application/pages/app.py)
+[Wed Apr 06 00:00:25.082485 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968] [2022-04-06 00:00:25,076] ERROR in app: Exception on /admin_login [POST]
+[Wed Apr 06 00:00:25.095119 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968] Traceback (most recent call last):
+[Wed Apr 06 00:00:25.095149 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:00:25.095157 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968]     response = self.full_dispatch_request()
+[Wed Apr 06 00:00:25.095163 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed Apr 06 00:00:25.095170 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968]     rv = self.handle_user_exception(e)
+[Wed Apr 06 00:00:25.095177 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:00:25.095183 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968]     rv = self.dispatch_request()
+[Wed Apr 06 00:00:25.095190 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:00:25.095196 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:00:25.095203 2022] [wsgi:error] [pid 27374] [remote 98.248.133.252:58968] TypeError: admin_login() missing 2 required positional arguments: 'UserName' and 'Password'
+[Wed Apr 06 00:01:01.881658 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017] [2022-04-06 00:01:01,880] ERROR in app: Exception on /admin_login [POST]
+[Wed Apr 06 00:01:01.881742 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017] Traceback (most recent call last):
+[Wed Apr 06 00:01:01.881750 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:01:01.881758 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017]     response = self.full_dispatch_request()
+[Wed Apr 06 00:01:01.881772 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed Apr 06 00:01:01.881779 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017]     rv = self.handle_user_exception(e)
+[Wed Apr 06 00:01:01.881785 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:01:01.881791 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017]     rv = self.dispatch_request()
+[Wed Apr 06 00:01:01.881810 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:01:01.881816 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:01:01.881821 2022] [wsgi:error] [pid 27434] [remote 98.248.133.252:59017] TypeError: admin_login() missing 2 required positional arguments: 'UserName' and 'Password'
+[Wed Apr 06 00:03:44.022460 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192] [2022-04-06 00:03:44,021] ERROR in app: Exception on /admin_login [POST]
+[Wed Apr 06 00:03:44.023338 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192] Traceback (most recent call last):
+[Wed Apr 06 00:03:44.023360 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:03:44.023367 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192]     response = self.full_dispatch_request()
+[Wed Apr 06 00:03:44.023374 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed Apr 06 00:03:44.023381 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192]     rv = self.handle_user_exception(e)
+[Wed Apr 06 00:03:44.023387 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:03:44.023394 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192]     rv = self.dispatch_request()
+[Wed Apr 06 00:03:44.023400 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:03:44.023406 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:03:44.023413 2022] [wsgi:error] [pid 27517] [remote 98.248.133.252:59192] TypeError: admin_login() missing 2 required positional arguments: 'UserName' and 'Password'
+[Wed Apr 06 00:06:53.141024 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379] [2022-04-06 00:06:53,138] ERROR in app: Exception on /admin_login [POST]
+[Wed Apr 06 00:06:53.141084 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379] Traceback (most recent call last):
+[Wed Apr 06 00:06:53.141092 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:06:53.141099 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379]     response = self.full_dispatch_request()
+[Wed Apr 06 00:06:53.141105 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed Apr 06 00:06:53.141112 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379]     rv = self.handle_user_exception(e)
+[Wed Apr 06 00:06:53.141118 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:06:53.141124 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379]     rv = self.dispatch_request()
+[Wed Apr 06 00:06:53.141131 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:06:53.141146 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:06:53.141153 2022] [wsgi:error] [pid 27625] [remote 98.248.133.252:59379] TypeError: admin_login() missing 2 required positional arguments: 'UserName' and 'Password'
+[Wed Apr 06 00:08:42.920874 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482] [2022-04-06 00:08:42,919] ERROR in app: Exception on /admin_login [POST]
+[Wed Apr 06 00:08:42.936843 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482] Traceback (most recent call last):
+[Wed Apr 06 00:08:42.936866 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:08:42.936873 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482]     response = self.full_dispatch_request()
+[Wed Apr 06 00:08:42.936880 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed Apr 06 00:08:42.936886 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482]     rv = self.handle_user_exception(e)
+[Wed Apr 06 00:08:42.936891 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:08:42.936896 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482]     rv = self.dispatch_request()
+[Wed Apr 06 00:08:42.936901 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:08:42.936907 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:08:42.936913 2022] [wsgi:error] [pid 27733] [remote 98.248.133.252:59482] TypeError: admin_login() missing 2 required positional arguments: 'UserName' and 'Password'
+[Wed Apr 06 00:10:16.926883 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576] [2022-04-06 00:10:16,924] ERROR in app: Exception on /admin_login [POST]
+[Wed Apr 06 00:10:16.926961 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576] Traceback (most recent call last):
+[Wed Apr 06 00:10:16.926974 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:10:16.926981 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576]     response = self.full_dispatch_request()
+[Wed Apr 06 00:10:16.926987 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed Apr 06 00:10:16.926993 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576]     rv = self.handle_user_exception(e)
+[Wed Apr 06 00:10:16.927001 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:10:16.927007 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576]     rv = self.dispatch_request()
+[Wed Apr 06 00:10:16.927013 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:10:16.927020 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:10:16.927027 2022] [wsgi:error] [pid 27914] [remote 98.248.133.252:59576] TypeError: admin_login() missing 2 required positional arguments: 'UserName' and 'Password'
+[Wed Apr 06 00:15:17.208637 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902] [2022-04-06 00:15:17,204] ERROR in app: Exception on /admin_login [POST]
+[Wed Apr 06 00:15:17.208707 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902] Traceback (most recent call last):
+[Wed Apr 06 00:15:17.208715 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:15:17.208722 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]     response = self.full_dispatch_request()
+[Wed Apr 06 00:15:17.208728 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed Apr 06 00:15:17.209382 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]     rv = self.handle_user_exception(e)
+[Wed Apr 06 00:15:17.209390 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:15:17.209394 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]     rv = self.dispatch_request()
+[Wed Apr 06 00:15:17.209398 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:15:17.209402 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:15:17.209405 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 65, in admin_login
+[Wed Apr 06 00:15:17.209409 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]     params = json.loads(request.get_json())
+[Wed Apr 06 00:15:17.209413 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]   File "/usr/lib/python3.7/json/__init__.py", line 341, in loads
+[Wed Apr 06 00:15:17.209417 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902]     raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+[Wed Apr 06 00:15:17.209421 2022] [wsgi:error] [pid 28062] [remote 98.248.133.252:59902] TypeError: the JSON object must be str, bytes or bytearray, not dict
+[Wed Apr 06 00:17:43.592848 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] Able to get usr and pwd Admin Admin
+[Wed Apr 06 00:17:43.594132 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] [2022-04-06 00:17:43,593] ERROR in app: Exception on /admin_login [POST]
+[Wed Apr 06 00:17:43.594152 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] Traceback (most recent call last):
+[Wed Apr 06 00:17:43.594158 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 75, in admin_login
+[Wed Apr 06 00:17:43.594163 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]     connection = mysql.connector.connect(host='34.102.11.81',
+[Wed Apr 06 00:17:43.594167 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] AttributeError: 'MySQL' object has no attribute 'connector'
+[Wed Apr 06 00:17:43.594171 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] 
+[Wed Apr 06 00:17:43.594177 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] During handling of the above exception, another exception occurred:
+[Wed Apr 06 00:17:43.594184 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] 
+[Wed Apr 06 00:17:43.594188 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] Traceback (most recent call last):
+[Wed Apr 06 00:17:43.594192 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 88, in admin_login
+[Wed Apr 06 00:17:43.594197 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]     except Error as e:
+[Wed Apr 06 00:17:43.594201 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] NameError: name 'Error' is not defined
+[Wed Apr 06 00:17:43.594206 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] 
+[Wed Apr 06 00:17:43.594210 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] During handling of the above exception, another exception occurred:
+[Wed Apr 06 00:17:43.594214 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] 
+[Wed Apr 06 00:17:43.594218 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] Traceback (most recent call last):
+[Wed Apr 06 00:17:43.594222 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:17:43.594240 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]     response = self.full_dispatch_request()
+[Wed Apr 06 00:17:43.594244 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed Apr 06 00:17:43.594248 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]     rv = self.handle_user_exception(e)
+[Wed Apr 06 00:17:43.594282 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:17:43.594290 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]     rv = self.dispatch_request()
+[Wed Apr 06 00:17:43.594294 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:17:43.594298 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:17:43.594302 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 91, in admin_login
+[Wed Apr 06 00:17:43.594306 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056]     if connection.is_connected():
+[Wed Apr 06 00:17:43.594309 2022] [wsgi:error] [pid 28145] [remote 98.248.133.252:60056] UnboundLocalError: local variable 'connection' referenced before assignment
+[Wed Apr 06 00:29:19.910713 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450] Able to get usr and pwd Admin Admin
+[Wed Apr 06 00:29:20.101954 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450] (('Admin', 'Admin'),)
+[Wed Apr 06 00:29:20.190723 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450] [2022-04-06 00:29:20,102] ERROR in app: Exception on /admin_login [POST]
+[Wed Apr 06 00:29:20.190768 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450] Traceback (most recent call last):
+[Wed Apr 06 00:29:20.190776 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:29:20.190784 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     response = self.full_dispatch_request()
+[Wed Apr 06 00:29:20.190790 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1518, in full_dispatch_request
+[Wed Apr 06 00:29:20.190797 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     rv = self.handle_user_exception(e)
+[Wed Apr 06 00:29:20.190803 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:29:20.190810 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     rv = self.dispatch_request()
+[Wed Apr 06 00:29:20.190816 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:29:20.190823 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:29:20.190829 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 99, in admin_login
+[Wed Apr 06 00:29:20.190835 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     #         connection.close()
+[Wed Apr 06 00:29:20.190847 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 148, in render_template
+[Wed Apr 06 00:29:20.190857 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+[Wed Apr 06 00:29:20.190864 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 1068, in get_or_select_template
+[Wed Apr 06 00:29:20.190893 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     return self.get_template(template_name_or_list, parent, globals)
+[Wed Apr 06 00:29:20.190899 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 997, in get_template
+[Wed Apr 06 00:29:20.190904 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     return self._load_template(name, globals)
+[Wed Apr 06 00:29:20.190909 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/jinja2/environment.py", line 958, in _load_template
+[Wed Apr 06 00:29:20.190913 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     template = self.loader.load(self, name, self.make_globals(globals))
+[Wed Apr 06 00:29:20.190917 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/jinja2/loaders.py", line 125, in load
+[Wed Apr 06 00:29:20.190921 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     source, filename, uptodate = self.get_source(environment, name)
+[Wed Apr 06 00:29:20.190925 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 59, in get_source
+[Wed Apr 06 00:29:20.190929 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     return self._get_source_fast(environment, template)
+[Wed Apr 06 00:29:20.190933 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]   File "/usr/local/lib/python3.7/dist-packages/flask/templating.py", line 95, in _get_source_fast
+[Wed Apr 06 00:29:20.190936 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450]     raise TemplateNotFound(template)
+[Wed Apr 06 00:29:20.190940 2022] [wsgi:error] [pid 28327] [remote 98.248.133.252:55450] jinja2.exceptions.TemplateNotFound: adminHomepage.html
+[Wed Apr 06 00:31:02.446802 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554] mod_wsgi (pid=28639): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Wed Apr 06 00:31:02.446877 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554] mod_wsgi (pid=28639): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Wed Apr 06 00:31:02.449226 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554] Traceback (most recent call last):
+[Wed Apr 06 00:31:02.449276 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Wed Apr 06 00:31:02.449283 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]     from app import app as application
+[Wed Apr 06 00:31:02.449290 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 4, in <module>
+[Wed Apr 06 00:31:02.449295 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]     logging.basicConfig(filename='logging.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+[Wed Apr 06 00:31:02.449302 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]   File "/usr/lib/python3.7/logging/__init__.py", line 1900, in basicConfig
+[Wed Apr 06 00:31:02.449307 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]     h = FileHandler(filename, mode)
+[Wed Apr 06 00:31:02.449313 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]   File "/usr/lib/python3.7/logging/__init__.py", line 1092, in __init__
+[Wed Apr 06 00:31:02.449318 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]     StreamHandler.__init__(self, self._open())
+[Wed Apr 06 00:31:02.449325 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]   File "/usr/lib/python3.7/logging/__init__.py", line 1121, in _open
+[Wed Apr 06 00:31:02.449331 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554]     return open(self.baseFilename, self.mode, encoding=self.encoding)
+[Wed Apr 06 00:31:02.449360 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55554] PermissionError: [Errno 13] Permission denied: '/logging.log'
+[Wed Apr 06 00:32:45.655194 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655] mod_wsgi (pid=28639): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Wed Apr 06 00:32:45.655299 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655] mod_wsgi (pid=28639): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Wed Apr 06 00:32:45.655449 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655] Traceback (most recent call last):
+[Wed Apr 06 00:32:45.655490 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Wed Apr 06 00:32:45.655495 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]     from app import app as application
+[Wed Apr 06 00:32:45.655503 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 4, in <module>
+[Wed Apr 06 00:32:45.655508 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]     logging.basicConfig(filename='logging.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+[Wed Apr 06 00:32:45.655515 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]   File "/usr/lib/python3.7/logging/__init__.py", line 1900, in basicConfig
+[Wed Apr 06 00:32:45.655520 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]     h = FileHandler(filename, mode)
+[Wed Apr 06 00:32:45.655526 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]   File "/usr/lib/python3.7/logging/__init__.py", line 1092, in __init__
+[Wed Apr 06 00:32:45.655595 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]     StreamHandler.__init__(self, self._open())
+[Wed Apr 06 00:32:45.655605 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]   File "/usr/lib/python3.7/logging/__init__.py", line 1121, in _open
+[Wed Apr 06 00:32:45.655610 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655]     return open(self.baseFilename, self.mode, encoding=self.encoding)
+[Wed Apr 06 00:32:45.655627 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55655] PermissionError: [Errno 13] Permission denied: '/logging.log'
+[Wed Apr 06 00:35:27.406143 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833] mod_wsgi (pid=28639): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Wed Apr 06 00:35:27.406403 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833] mod_wsgi (pid=28639): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Wed Apr 06 00:35:27.406635 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833] Traceback (most recent call last):
+[Wed Apr 06 00:35:27.406682 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Wed Apr 06 00:35:27.406688 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]     from app import app as application
+[Wed Apr 06 00:35:27.406696 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 4, in <module>
+[Wed Apr 06 00:35:27.406702 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]     logging.basicConfig(filename='logging.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+[Wed Apr 06 00:35:27.406709 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]   File "/usr/lib/python3.7/logging/__init__.py", line 1900, in basicConfig
+[Wed Apr 06 00:35:27.406714 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]     h = FileHandler(filename, mode)
+[Wed Apr 06 00:35:27.406734 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]   File "/usr/lib/python3.7/logging/__init__.py", line 1092, in __init__
+[Wed Apr 06 00:35:27.406739 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]     StreamHandler.__init__(self, self._open())
+[Wed Apr 06 00:35:27.406745 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]   File "/usr/lib/python3.7/logging/__init__.py", line 1121, in _open
+[Wed Apr 06 00:35:27.406749 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833]     return open(self.baseFilename, self.mode, encoding=self.encoding)
+[Wed Apr 06 00:35:27.406764 2022] [wsgi:error] [pid 28639] [remote 98.248.133.252:55833] PermissionError: [Errno 13] Permission denied: '/logging.log'
+[Wed Apr 06 00:41:26.102608 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238] --- Logging error ---
+[Wed Apr 06 00:41:26.106000 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238] Traceback (most recent call last):
+[Wed Apr 06 00:41:26.106061 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]   File "/usr/lib/python3.7/logging/__init__.py", line 1034, in emit
+[Wed Apr 06 00:41:26.106070 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]     msg = self.format(record)
+[Wed Apr 06 00:41:26.106079 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]   File "/usr/lib/python3.7/logging/__init__.py", line 880, in format
+[Wed Apr 06 00:41:26.106086 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]     return fmt.format(record)
+[Wed Apr 06 00:41:26.106095 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]   File "/usr/lib/python3.7/logging/__init__.py", line 619, in format
+[Wed Apr 06 00:41:26.106101 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]     record.message = record.getMessage()
+[Wed Apr 06 00:41:26.106111 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]   File "/usr/lib/python3.7/logging/__init__.py", line 380, in getMessage
+[Wed Apr 06 00:41:26.106117 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]     msg = msg % self.args
+[Wed Apr 06 00:41:26.106142 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238] TypeError: not all arguments converted during string formatting
+[Wed Apr 06 00:41:26.106160 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238] Call stack:
+[Wed Apr 06 00:41:26.108465 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2091, in __call__
+[Wed Apr 06 00:41:26.108485 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]     return self.wsgi_app(environ, start_response)
+[Wed Apr 06 00:41:26.108494 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 2073, in wsgi_app
+[Wed Apr 06 00:41:26.108499 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]     response = self.full_dispatch_request()
+[Wed Apr 06 00:41:26.108505 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1516, in full_dispatch_request
+[Wed Apr 06 00:41:26.108510 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]     rv = self.dispatch_request()
+[Wed Apr 06 00:41:26.108517 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1502, in dispatch_request
+[Wed Apr 06 00:41:26.108522 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]     return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+[Wed Apr 06 00:41:26.108528 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 70, in admin_login
+[Wed Apr 06 00:41:26.108533 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238]     logging.warning("Able to get usr and pwd", UserName, Password)
+[Wed Apr 06 00:41:26.108550 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238] Message: 'Able to get usr and pwd'
+[Wed Apr 06 00:41:26.108567 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238] Arguments: ('Admin', 'Admin')
+[Wed Apr 06 00:41:26.135856 2022] [wsgi:error] [pid 28982] [remote 98.248.133.252:56238] (('Admin', 'Admin'),)
+[Wed Apr 06 03:07:26.767787 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60337] Able to get request details
+[Wed Apr 06 03:07:26.834352 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60337] {'filter_by_Qualification': 'PHD', 'filter_by_skills': 'html'}
+[Wed Apr 06 03:07:26.835512 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60337] Able to get skills
+[Wed Apr 06 03:07:26.837055 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60337] Looking for skills and education
+[Wed Apr 06 03:07:26.853818 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60337] ()
+[Wed Apr 06 03:07:26.853904 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60337] Acess successful
+[Wed Apr 06 03:07:34.381039 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60340] Able to get request details
+[Wed Apr 06 03:07:34.381101 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60340] {'filter_by_Qualification': '', 'filter_by_skills': 'java'}
+[Wed Apr 06 03:07:34.381110 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60340] Able to get skills
+[Wed Apr 06 03:07:34.382302 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60340] Looking for skills
+[Wed Apr 06 03:07:34.383969 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60340] (('123', 'nomarOlivas', '123456', 'Nomar', None, 'nolivas1223', '123 Gator Dr', 12345678, '8/16/2000', 1234, 'nomar.com', 'JavaScript', 'English', 1, 'Obj', 'Rec', 'CS', '1', ''), ('5050', 'Purva35', 'Pswd', 'Purva', None, 'Purva@gmail', '3232 SF dr.', 6780, '9/12/1999', 1212, 'Gator.com', 'Java', 'French', 8, 'Web Dev', 'Teacher Rec', 'Web Dev', '3', ''))
+[Wed Apr 06 03:07:34.384051 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:60340] Acess successful
+[Wed Apr 06 03:33:32.490754 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:58249] Able to get request details
+[Wed Apr 06 03:33:32.523245 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:58249] {'filter_by_Qualification': 'PHD', 'filter_by_skills': 'java'}
+[Wed Apr 06 03:33:32.523332 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:58249] Able to get skills
+[Wed Apr 06 03:33:32.525079 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:58249] Looking for skills and education
+[Wed Apr 06 03:33:32.526336 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:58249] (('123', 'nomarOlivas', '123456', 'Nomar', None, 'nolivas1223', '123 Gator Dr', 12345678, '8/16/2000', 1234, 'nomar.com', 'JavaScript', 'English', 1, 'Obj', 'Rec', 'CS', '1', '', '123', 'PHD', 'PHD', 4.0, None, 2022, 'Nomar', 'Deans List'), ('5050', 'Purva35', 'Pswd', 'Purva', None, 'Purva@gmail', '3232 SF dr.', 6780, '9/12/1999', 1212, 'Gator.com', 'Java', 'French', 8, 'Web Dev', 'Teacher Rec', 'Web Dev', '3', '', '5050', 'PHD', 'PHD', 3.24, None, 2019, 'Ellie', 'Honors'))
+[Wed Apr 06 03:33:32.526442 2022] [wsgi:error] [pid 32539] [remote 98.248.133.252:58249] Acess successful
+[Wed Apr 06 08:03:35.759479 2022] [authz_core:error] [pid 32543] [client 45.33.65.249:51896] AH01630: client denied by server configuration: /var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi
+[Wed Apr 06 09:16:14.284409 2022] [core:error] [pid 32544] [client 45.155.204.146:59500] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Wed Apr 06 12:35:25.507292 2022] [cgi:error] [pid 32544] [client 20.213.136.30:50795] AH02811: script not found or unable to stat: /usr/lib/cgi-bin/luci
+[Wed Apr 06 17:12:15.514362 2022] [wsgi:error] [pid 32543] [client 182.116.109.202:54845] mod_wsgi (pid=32543): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Thu Apr 07 13:19:39.858211 2022] [core:error] [pid 24895] [client 45.155.204.146:51794] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Thu Apr 07 23:12:29.586109 2022] [wsgi:error] [pid 24873] [client 209.17.96.82:57511] Timeout when reading response headers from daemon process 'GatorJobs': /var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi
+[Fri Apr 08 17:40:02.801866 2022] [core:error] [pid 17972] [client 45.155.204.146:34578] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Sat Apr 09 21:30:09.891065 2022] [core:error] [pid 12423] [client 45.155.204.146:35148] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Sat Apr 09 23:49:46.527779 2022] [cgi:error] [pid 12117] [client 185.44.81.114:36262] AH02811: script not found or unable to stat: /usr/lib/cgi-bin/index2.asp, referer: http://34.102.11.81:80/cgi-bin/index2.asp
+[Mon Apr 11 03:56:31.182171 2022] [core:error] [pid 31691] [client 45.155.204.146:48680] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Mon Apr 11 13:30:57.914025 2022] [wsgi:error] [pid 31690] [client 115.60.81.17:29103] mod_wsgi (pid=31690): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Wed Apr 13 03:59:26.974403 2022] [wsgi:error] [pid 6048] [remote 98.248.133.252:52868] Able to get request details
+[Wed Apr 13 03:59:26.984176 2022] [wsgi:error] [pid 6048] [remote 98.248.133.252:52868] {'filter_by_Qualification': '', 'filter_by_skills': 'java'}
+[Wed Apr 13 03:59:26.984207 2022] [wsgi:error] [pid 6048] [remote 98.248.133.252:52868] Able to get skills
+[Wed Apr 13 03:59:26.985617 2022] [wsgi:error] [pid 6048] [remote 98.248.133.252:52868] Looking for skills
+[Wed Apr 13 03:59:27.050022 2022] [wsgi:error] [pid 6048] [remote 98.248.133.252:52868] (('123', 'nomarOlivas', '123456', 'Nomar', None, 'nolivas1223', '123 Gator Dr', 12345678, '8/16/2000', 1234, 'nomar.com', 'JavaScript', 'English', 1, 'Obj', 'Rec', 'CS', '1', ''), ('5050', 'Purva35', 'Pswd', 'Purva', None, 'Purva@gmail', '3232 SF dr.', 6780, '9/12/1999', 1212, 'Gator.com', 'Java', 'French', 8, 'Web Dev', 'Teacher Rec', 'Web Dev', '3', ''))
+[Wed Apr 13 03:59:27.050150 2022] [wsgi:error] [pid 6048] [remote 98.248.133.252:52868] Acess successful
+[Wed Apr 13 04:18:35.558009 2022] [wsgi:error] [pid 6796] [remote 98.248.133.252:53777] Able to get request details
+[Wed Apr 13 04:18:35.558074 2022] [wsgi:error] [pid 6796] [remote 98.248.133.252:53777] {'filter_by_Qualification': '', 'filter_by_skills': 'java'}
+[Wed Apr 13 04:18:35.558083 2022] [wsgi:error] [pid 6796] [remote 98.248.133.252:53777] Able to get skills
+[Wed Apr 13 04:18:35.631301 2022] [wsgi:error] [pid 6796] [remote 98.248.133.252:53777] Looking for skills
+[Wed Apr 13 04:18:35.632265 2022] [wsgi:error] [pid 6796] [remote 98.248.133.252:53777] (('123', 'nomarOlivas', '123456', 'Nomar', None, 'nolivas1223', '123 Gator Dr', 12345678, '8/16/2000', 1234, 'nomar.com', 'JavaScript', 'English', 1, 'Obj', 'Rec', 'CS', '1', ''), ('5050', 'Purva35', 'Pswd', 'Purva', None, 'Purva@gmail', '3232 SF dr.', 6780, '9/12/1999', 1212, 'Gator.com', 'Java', 'French', 8, 'Web Dev', 'Teacher Rec', 'Web Dev', '3', ''))
+[Wed Apr 13 04:18:35.632369 2022] [wsgi:error] [pid 6796] [remote 98.248.133.252:53777] Acess successful
+[Wed Apr 13 12:00:05.308237 2022] [core:error] [pid 12257] [client 45.155.204.146:56870] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Thu Apr 14 04:54:54.070071 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900] mod_wsgi (pid=5931): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 04:54:54.090129 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900] mod_wsgi (pid=5931): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 04:54:54.092847 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900] Traceback (most recent call last):
+[Thu Apr 14 04:54:54.092906 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 04:54:54.092923 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]     from app import app as application
+[Thu Apr 14 04:54:54.092931 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 6, in <module>
+[Thu Apr 14 04:54:54.092936 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]     format='%(name)s - %(levelname)s - %(message)s')
+[Thu Apr 14 04:54:54.092942 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]   File "/usr/lib/python3.7/logging/__init__.py", line 1900, in basicConfig
+[Thu Apr 14 04:54:54.092946 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]     h = FileHandler(filename, mode)
+[Thu Apr 14 04:54:54.092952 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]   File "/usr/lib/python3.7/logging/__init__.py", line 1092, in __init__
+[Thu Apr 14 04:54:54.092956 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]     StreamHandler.__init__(self, self._open())
+[Thu Apr 14 04:54:54.092962 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]   File "/usr/lib/python3.7/logging/__init__.py", line 1121, in _open
+[Thu Apr 14 04:54:54.092967 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900]     return open(self.baseFilename, self.mode, encoding=self.encoding)
+[Thu Apr 14 04:54:54.092984 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49900] PermissionError: [Errno 13] Permission denied: '/var/www/csc648-02-sp22-team05/application/pages/logs/logging.log'
+[Thu Apr 14 04:54:56.971004 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899] mod_wsgi (pid=5931): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 04:54:56.971063 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899] mod_wsgi (pid=5931): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 04:54:56.971169 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899] Traceback (most recent call last):
+[Thu Apr 14 04:54:56.971203 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 04:54:56.971209 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]     from app import app as application
+[Thu Apr 14 04:54:56.971215 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 6, in <module>
+[Thu Apr 14 04:54:56.971220 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]     format='%(name)s - %(levelname)s - %(message)s')
+[Thu Apr 14 04:54:56.971226 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]   File "/usr/lib/python3.7/logging/__init__.py", line 1900, in basicConfig
+[Thu Apr 14 04:54:56.971230 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]     h = FileHandler(filename, mode)
+[Thu Apr 14 04:54:56.971236 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]   File "/usr/lib/python3.7/logging/__init__.py", line 1092, in __init__
+[Thu Apr 14 04:54:56.971240 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]     StreamHandler.__init__(self, self._open())
+[Thu Apr 14 04:54:56.971246 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]   File "/usr/lib/python3.7/logging/__init__.py", line 1121, in _open
+[Thu Apr 14 04:54:56.971251 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899]     return open(self.baseFilename, self.mode, encoding=self.encoding)
+[Thu Apr 14 04:54:56.971264 2022] [wsgi:error] [pid 5931] [remote 98.248.133.252:49899] PermissionError: [Errno 13] Permission denied: '/var/www/csc648-02-sp22-team05/application/pages/logs/logging.log'
+[Thu Apr 14 05:46:21.648000 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234] mod_wsgi (pid=3839): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 05:46:21.648085 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234] mod_wsgi (pid=3839): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 05:46:21.650558 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234] Traceback (most recent call last):
+[Thu Apr 14 05:46:21.650621 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 05:46:21.650628 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]     from app import app as application
+[Thu Apr 14 05:46:21.650635 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 6, in <module>
+[Thu Apr 14 05:46:21.650639 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]     format='%(name)s - %(levelname)s - %(message)s')
+[Thu Apr 14 05:46:21.650645 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]   File "/usr/lib/python3.7/logging/__init__.py", line 1900, in basicConfig
+[Thu Apr 14 05:46:21.650650 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]     h = FileHandler(filename, mode)
+[Thu Apr 14 05:46:21.650655 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]   File "/usr/lib/python3.7/logging/__init__.py", line 1092, in __init__
+[Thu Apr 14 05:46:21.650660 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]     StreamHandler.__init__(self, self._open())
+[Thu Apr 14 05:46:21.650665 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]   File "/usr/lib/python3.7/logging/__init__.py", line 1121, in _open
+[Thu Apr 14 05:46:21.650670 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234]     return open(self.baseFilename, self.mode, encoding=self.encoding)
+[Thu Apr 14 05:46:21.650685 2022] [wsgi:error] [pid 3839] [remote 98.248.133.252:59234] PermissionError: [Errno 13] Permission denied: '/var/www/csc648-02-sp22-team05/application/pages/logs/logging.log'
+[Thu Apr 14 22:14:01.078600 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57190] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:14:01.078745 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57190] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:14:01.079068 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57190] Traceback (most recent call last):
+[Thu Apr 14 22:14:01.079097 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57190]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:14:01.079102 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57190]     from app import app as application
+[Thu Apr 14 22:14:01.079108 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57190]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:14:01.079113 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57190]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:14:01.079128 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57190] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:14:01.317668 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57191] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:14:01.317735 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57191] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:14:01.317832 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57191] Traceback (most recent call last):
+[Thu Apr 14 22:14:01.317857 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57191]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:14:01.317863 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57191]     from app import app as application
+[Thu Apr 14 22:14:01.317883 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57191]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:14:01.317887 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57191]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:14:01.317901 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:57191] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:15:21.804552 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60733] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:21.804645 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60733] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:21.804752 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60733] Traceback (most recent call last):
+[Thu Apr 14 22:15:21.804779 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60733]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:15:21.804784 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60733]     from app import app as application
+[Thu Apr 14 22:15:21.804791 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60733]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:15:21.804796 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60733]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:15:21.804813 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60733] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:15:21.904528 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60734] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:21.904599 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60734] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:21.904703 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60734] Traceback (most recent call last):
+[Thu Apr 14 22:15:21.904728 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60734]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:15:21.904733 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60734]     from app import app as application
+[Thu Apr 14 22:15:21.904741 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60734]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:15:21.904745 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60734]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:15:21.904759 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60734] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:15:39.653409 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60742] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:39.653548 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60742] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:39.653650 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60742] Traceback (most recent call last):
+[Thu Apr 14 22:15:39.653678 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60742]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:15:39.653685 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60742]     from app import app as application
+[Thu Apr 14 22:15:39.653707 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60742]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:15:39.653713 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60742]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:15:39.653730 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60742] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:15:39.765773 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60741] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:39.765841 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60741] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:39.765947 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60741] Traceback (most recent call last):
+[Thu Apr 14 22:15:39.765972 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60741]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:15:39.765976 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60741]     from app import app as application
+[Thu Apr 14 22:15:39.765982 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60741]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:15:39.765986 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60741]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:15:39.766001 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60741] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:15:44.493374 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60746] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:44.493444 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60746] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:44.493538 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60746] Traceback (most recent call last):
+[Thu Apr 14 22:15:44.493561 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60746]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:15:44.493565 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60746]     from app import app as application
+[Thu Apr 14 22:15:44.493572 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60746]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:15:44.493576 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60746]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:15:44.493589 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60746] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:15:44.606797 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60747] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:44.606856 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60747] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:44.606950 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60747] Traceback (most recent call last):
+[Thu Apr 14 22:15:44.606973 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60747]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:15:44.606977 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60747]     from app import app as application
+[Thu Apr 14 22:15:44.606984 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60747]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:15:44.607001 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60747]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:15:44.607015 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60747] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:15:47.848044 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60749] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:47.848115 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60749] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:47.848207 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60749] Traceback (most recent call last):
+[Thu Apr 14 22:15:47.848257 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60749]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:15:47.848262 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60749]     from app import app as application
+[Thu Apr 14 22:15:47.848269 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60749]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:15:47.848273 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60749]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:15:47.848287 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60749] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:15:47.958471 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60750] mod_wsgi (pid=22488): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:47.958532 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60750] mod_wsgi (pid=22488): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:15:47.958625 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60750] Traceback (most recent call last):
+[Thu Apr 14 22:15:47.958648 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60750]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:15:47.958653 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60750]     from app import app as application
+[Thu Apr 14 22:15:47.958659 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60750]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 145, in <module>
+[Thu Apr 14 22:15:47.958663 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60750]     @app.route('/studentHomepage', methods['GET'])
+[Thu Apr 14 22:15:47.958676 2022] [wsgi:error] [pid 22488] [remote 98.248.133.252:60750] TypeError: list indices must be integers or slices, not str
+[Thu Apr 14 22:20:55.657205 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926] mod_wsgi (pid=23029): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:20:55.657356 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926] mod_wsgi (pid=23029): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:20:55.672739 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926] Traceback (most recent call last):
+[Thu Apr 14 22:20:55.672807 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:20:55.672814 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]     from app import app as application
+[Thu Apr 14 22:20:55.672821 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 155, in <module>
+[Thu Apr 14 22:20:55.672827 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]     @app.route('student_signup_method', methods=['POST'])
+[Thu Apr 14 22:20:55.672842 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]   File "/usr/local/lib/python3.7/dist-packages/flask/scaffold.py", line 439, in decorator
+[Thu Apr 14 22:20:55.672846 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]     self.add_url_rule(rule, endpoint, f, **options)
+[Thu Apr 14 22:20:55.672852 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]   File "/usr/local/lib/python3.7/dist-packages/flask/scaffold.py", line 57, in wrapper_func
+[Thu Apr 14 22:20:55.672856 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]     return f(self, *args, **kwargs)
+[Thu Apr 14 22:20:55.672862 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1083, in add_url_rule
+[Thu Apr 14 22:20:55.672866 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]     rule = self.url_rule_class(rule, methods=methods, **options)
+[Thu Apr 14 22:20:55.672872 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/routing.py", line 698, in __init__
+[Thu Apr 14 22:20:55.672876 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926]     raise ValueError("urls must start with a leading slash")
+[Thu Apr 14 22:20:55.672892 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60926] ValueError: urls must start with a leading slash
+[Thu Apr 14 22:20:55.815931 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927] mod_wsgi (pid=23029): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:20:55.816138 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927] mod_wsgi (pid=23029): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:20:55.816291 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927] Traceback (most recent call last):
+[Thu Apr 14 22:20:55.816333 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:20:55.816339 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]     from app import app as application
+[Thu Apr 14 22:20:55.816346 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 155, in <module>
+[Thu Apr 14 22:20:55.816350 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]     @app.route('student_signup_method', methods=['POST'])
+[Thu Apr 14 22:20:55.816357 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]   File "/usr/local/lib/python3.7/dist-packages/flask/scaffold.py", line 439, in decorator
+[Thu Apr 14 22:20:55.816361 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]     self.add_url_rule(rule, endpoint, f, **options)
+[Thu Apr 14 22:20:55.816367 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]   File "/usr/local/lib/python3.7/dist-packages/flask/scaffold.py", line 57, in wrapper_func
+[Thu Apr 14 22:20:55.816371 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]     return f(self, *args, **kwargs)
+[Thu Apr 14 22:20:55.816377 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1083, in add_url_rule
+[Thu Apr 14 22:20:55.816381 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]     rule = self.url_rule_class(rule, methods=methods, **options)
+[Thu Apr 14 22:20:55.816386 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]   File "/usr/local/lib/python3.7/dist-packages/werkzeug/routing.py", line 698, in __init__
+[Thu Apr 14 22:20:55.816391 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927]     raise ValueError("urls must start with a leading slash")
+[Thu Apr 14 22:20:55.816405 2022] [wsgi:error] [pid 23029] [remote 98.248.133.252:60927] ValueError: urls must start with a leading slash
+[Thu Apr 14 22:22:10.576513 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999] mod_wsgi (pid=23086): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:22:10.576821 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999] mod_wsgi (pid=23086): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:22:10.578117 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999] Traceback (most recent call last):
+[Thu Apr 14 22:22:10.578177 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:22:10.578183 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]     from app import app as application
+[Thu Apr 14 22:22:10.578190 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 172, in <module>
+[Thu Apr 14 22:22:10.578196 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]     @app.route('/studentHomepage', methods=['GET'])
+[Thu Apr 14 22:22:10.578202 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]   File "/usr/local/lib/python3.7/dist-packages/flask/scaffold.py", line 439, in decorator
+[Thu Apr 14 22:22:10.578207 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]     self.add_url_rule(rule, endpoint, f, **options)
+[Thu Apr 14 22:22:10.578213 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]   File "/usr/local/lib/python3.7/dist-packages/flask/scaffold.py", line 57, in wrapper_func
+[Thu Apr 14 22:22:10.578218 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]     return f(self, *args, **kwargs)
+[Thu Apr 14 22:22:10.578224 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1091, in add_url_rule
+[Thu Apr 14 22:22:10.578228 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999]     "View function mapping is overwriting an existing"
+[Thu Apr 14 22:22:10.578244 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60999] AssertionError: View function mapping is overwriting an existing endpoint function: studentHomepage
+[Thu Apr 14 22:22:10.745200 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998] mod_wsgi (pid=23086): Failed to exec Python script file '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:22:10.745454 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998] mod_wsgi (pid=23086): Exception occurred processing WSGI script '/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi'.
+[Thu Apr 14 22:22:10.745614 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998] Traceback (most recent call last):
+[Thu Apr 14 22:22:10.745654 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]   File "/var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi", line 8, in <module>
+[Thu Apr 14 22:22:10.745661 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]     from app import app as application
+[Thu Apr 14 22:22:10.745671 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]   File "/var/www/csc648-02-sp22-team05/application/pages/app.py", line 172, in <module>
+[Thu Apr 14 22:22:10.745677 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]     @app.route('/studentHomepage', methods=['GET'])
+[Thu Apr 14 22:22:10.745685 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]   File "/usr/local/lib/python3.7/dist-packages/flask/scaffold.py", line 439, in decorator
+[Thu Apr 14 22:22:10.745692 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]     self.add_url_rule(rule, endpoint, f, **options)
+[Thu Apr 14 22:22:10.745699 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]   File "/usr/local/lib/python3.7/dist-packages/flask/scaffold.py", line 57, in wrapper_func
+[Thu Apr 14 22:22:10.745718 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]     return f(self, *args, **kwargs)
+[Thu Apr 14 22:22:10.745726 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]   File "/usr/local/lib/python3.7/dist-packages/flask/app.py", line 1091, in add_url_rule
+[Thu Apr 14 22:22:10.745732 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998]     "View function mapping is overwriting an existing"
+[Thu Apr 14 22:22:10.745752 2022] [wsgi:error] [pid 23086] [remote 98.248.133.252:60998] AssertionError: View function mapping is overwriting an existing endpoint function: studentHomepage
+[Sat Apr 16 10:05:31.780813 2022] [core:error] [pid 21001] [client 45.155.204.146:45338] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Sat Apr 16 15:54:57.376454 2022] [authz_core:error] [pid 20055] [client 204.48.29.222:46530] AH01630: client denied by server configuration: /var/www/csc648-02-sp22-team05/application/pages/GatorJobs.wsgi
+[Sun Apr 17 13:24:03.916721 2022] [core:error] [pid 14642] [client 45.155.204.146:35746] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1
+[Mon Apr 18 01:53:20.359302 2022] [wsgi:error] [pid 8780] [client 180.125.113.127:56878] mod_wsgi (pid=8780): Request data read error when proxying data to daemon process: The timeout specified has expired.
+[Mon Apr 18 17:23:53.204102 2022] [core:error] [pid 8778] [client 45.155.204.146:46868] AH00126: Invalid URI in request POST /cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh HTTP/1.1

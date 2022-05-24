@@ -1,0 +1,71 @@
+<!-- class- CSC-648
+section- 02
+Team 5 -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/filter.css') }}"/>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <h1 class="page_heading"> Search available jobs </h1>
+</head>
+
+    
+<div class="filters_component">
+   
+    <!-- search input to filter with skills -->
+    <input class="search_input" id="search_skill" type="text" placeholder="Search..">
+
+
+    <!-- fliter for qualifications -->
+    <div class="filter_dropdown FD_qualification">
+        <select id="select_qualification" class="FD_button">
+            <option></option>
+        </select>
+    </div>
+
+    <!-- search button  -->
+    <button type="submit" class="search_button" onclick='submit_function();'>Search</button>
+</div>
+
+
+<script>
+    var select_qual = document.getElementById("select_qualification");
+    var qualifications = ["undergraduate", "graduate", "Masters", "PHD", "Doctorate"];
+
+    for (var i = 0; i < qualifications.length; i++) { //iterating through qualification array
+        var qual = qualifications[i]; 
+        var elem = document.createElement("option");
+        elem.textContent = qual;
+        elem.value = qual;
+        select_qual.appendChild(elem);  //showing the selected qualification in options tag
+
+        //function to send data to backend
+        function submit_function() {
+
+            const filter_by_Qualification = document.getElementById("select_qualification").value;
+            const filter_by_skills = document.getElementById("search_skill").value;
+
+
+            const dict_values = { filter_by_Qualification, filter_by_skills } //Pass the javascript variables to a dictionary.
+            const s = JSON.stringify(dict_values); // Stringify converts a JavaScript object or value to a JSON string
+            console.log(s); // Prints the variables to console window, which are in the JSON format
+            $.ajax({
+                url: "/results",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(s),
+                success: function(response) {
+                    console.log(response)
+                    document.write(response)
+                }
+            });
+
+        }
+    } 
+</script>
+
+
+
+</html>

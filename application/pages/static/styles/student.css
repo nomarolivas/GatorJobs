@@ -1,0 +1,164 @@
+.header {
+    background-color: #4f2378;
+    padding: 10px;
+    height: 100%;
+}
+
+.header-title {
+    color: #f1c300;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 10px;
+    -webkit-text-stroke: 2px white;
+}
+
+.head-btn {
+    margin: 10px;
+    background-color: #f1c300;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Lucida Handwriting';
+    padding: 10px;
+}
+
+.footer {
+    background-color: #4f2378;
+    padding: 12px;
+    position: fixed;
+    bottom: 0px;
+    color: #f1c300;
+    width: 100%;
+    height: 40px;
+}
+
+.center-div {
+    display: block;
+    width: 750px;  
+}
+
+.center-div-btn {
+    display: block;
+    width: 200px;  
+}
+
+.submit-btn {
+    margin: 10px;
+    background-color: #f1c300;
+    color: #fff;
+    font-weight: bold;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.radio-btn-text {
+    color: #fff;
+    font-size: 18px;
+}
+
+.form-check-input {
+    padding: 10px;
+}
+
+.login-container {
+    background-color: #9376ad;
+    height: auto;
+    padding: 20px;
+}
+
+.text-label {
+    color: #fff;
+    /* margin-bottom: 10px; */
+}
+
+.text-label-title {
+    color: #4f2378;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.text-link {
+    color: #4f2378;
+    font-size: 15px;
+}
+
+
+.student-container {
+    background-color: #9376ad;
+    height: auto;
+    padding: 20px;
+}
+
+.student-header {
+    background-color: #4f2378;
+    padding: 10px;
+    height: 30%;
+}
+
+.student-header-title {
+    color: #f1c300;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px;
+    -webkit-text-stroke: 2px white;
+}
+
+.student-header-subtitle {
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.collapsible {
+    background-color: #f1c300;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  
+.active, .collapsible:hover {
+background-color: #f1c300;
+}
+
+.content {
+padding: 18px;
+display: none;
+overflow: hidden;
+background-color: #f1f1f1;
+color: #4f2378;
+}
+
+@keyframes glowing {
+    0% {
+      background-color: #f1c300;
+      box-shadow: 0 0 5px #f1c300;
+    }
+    50% {
+      background-color: #ffff00;
+      box-shadow: 0 0 20px #ffff00;
+    }
+    100% {
+      background-color: #f1c300;
+      box-shadow: 0 0 5px #f1c300;
+    }
+}
+
+.alert-btn {
+    animation: glowing 1300ms infinite;
+}

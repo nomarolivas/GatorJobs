@@ -1,0 +1,56 @@
+
+    .page_heading {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 500;
+        text-align: center;
+        margin: 30px;
+    }
+
+    .filters_component {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .filter_dropdown {
+        position: relative;
+        width: 15%;
+    }
+
+    .FD_qualification {
+        width: 25%;
+    }
+
+    .FD_button {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: #EEEEEE;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: medium;
+        color: #000000;
+        border: 1px solid #262626;
+        box-sizing: border-box;
+    }
+
+    .filter_dropdown:hover .dropdown_menu {
+        display: block;
+    }
+
+    .search_input {
+        width: 40%;
+        height: 50px;
+        padding: 10px;
+        background: #EEEEEE;
+        border: 1px solid #262626;
+        box-sizing: border-box;
+    }
+
+    .search_button {
+        width: 10%;
+        background-color: #000000;
+        color: #ffffff;
+        font-size: medium;
+        border: 1px solid #262626;
+        box-sizing: border-box;
+    }

@@ -1,0 +1,151 @@
+.header {
+    background-color: #4f2378;
+    padding: 10px;
+}
+
+.head-btn {
+    margin: 10px;
+    background-color: #f1c300;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-title {
+    color: #f1c300;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+}
+
+.header-subtitle {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Lucida Handwriting';
+    padding: 10px;
+}
+
+.welcome {
+    color: #f1c300;
+}
+
+.admin-body {
+    margin: 20px;
+    /* text-align: justify; */
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #4f2378;
+    padding: 12px;
+    position: fixed;
+    bottom: 0px;
+    color: #f1c300;
+    width: 100%;
+    height: 40px;
+}
+
+.tab-content>.active {
+    padding: 20px;
+    background-color: #9376ad;
+    height: 100%;
+    color: white;
+    margin-top: 10px;
+    height: 100%;
+}
+
+.tab-content-list {
+    padding: 20px;
+    background-color: #9376ad;
+    height: 100%;
+    color: white;
+    margin-top: 10px;
+    height: 100%;
+}
+
+.dropdown {
+   display: inline;
+}
+
+.dropdown-menu-style {
+    color: #4f2378;
+    width: 100%;
+    background-color:  #f2f2f2;
+}
+
+.input-menu-style {
+    color: #4f2378;
+    width: 100%;
+}
+
+.filters {
+    display: inline;
+}
+
+.student-list {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.student-title {
+    font-size: 20px;
+    color: #f1c300;
+    font-weight: bold;
+}
+
+.student-info {
+    color: #4f2378;
+    font-size: 15px;
+}
+
+.student-tile {
+    background-color: #d9d9d9;
+    padding: 10px;
+}
+
+.student-tile-title {
+    color: #4f2378;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.match-tile {
+    background-color: #d9d9d9;
+}
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 48%;
+    float: left;
+    padding: 20px;
+    border: 5px solid #4f2378;
+    margin: 10px;
+    background-color: #4f2378;
+    
+}  
+
+.match-info {
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.match-tile-title {
+    color: #f1c300;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.center-div {
+    display: block;
+    width: 200px;  
+}
+
+.margin-auto {
+    margin: 0 auto;
+}

@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../static/styles/admin.css">
+    <!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}"/> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-buttons-class">
+            <div>
+                <button type="button" class="btn pull-right head-btn" onclick="adminLogout()">Logout</button>
+            </div>
+        </div>
+        <div class="header-title">
+            GATORJOBS
+        </div>
+    </div>
+    <div class="admin-body">
+        <div class="welcome">
+            <h2>
+                WELCOME ADMIN!
+            </h2>
+        </div>
+        <br />
+        <div class="float-container">
+            <div class="match-tile float-child">
+                <div id="student" class="student" style="display: none;">
+                    {{student}}
+                </div>   
+                <div id="student-tile">
+                </div>
+            </div>
+
+            <div class="match-tile float-child">   
+                <div id="job" class="job" style="display: none;">
+                    {{job}}
+                </div>   
+                <div id="job-tile" >
+                </div>
+            </div>
+        </div>
+        <div class="center-div margin-auto">
+           <button class="btn btn-lg head-btn" onclick="match()">Match and send alert</button>
+        </div>
+        
+        <div class="footer">
+            <p class="text-center">
+                This website is the intellectual property of Team 5
+            </p>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    window.onload = function() {
+        getStudentAndJobDetails()
+    }
+
+    function getStudentAndJobDetails() {
+        const studentId = window.localStorage.getItem('studentId')
+        const jobId = window.localStorage.getItem('jobId');
+        const dict_values = JSON.stringify({studentId, jobId})
+
+        $.ajax({
+                url: "/get_student_and_job_by_id",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(dict_values),
+                success: function(response) {
+                    console.log(response)
+                    document.write(response)
+                    var studentDetails = JSON.parse(document.getElementById("student").innerHTML);
+                    var studDiv = document.getElementById("student-tile")
+                    studDiv.innerHTML += `<div class="match-tile-title">
+                            ` + studentDetails[0].Name + `
+                        </div>
+                        <br />
+                        <div class="match-info">
+                            <p><b>Objective:</b> ` + studentDetails[0].Objectives + ` </p>
+                            <p><b>Degree:</b> `+ studentDetails[0].Degree +` </p>
+                            <p><b>GPA:</b> `+ studentDetails[0].GPA +` </p>
+                            <p><b>Domain:</b> `+ studentDetails[0].Category +` </p>
+                        </div>`
+
+                    var jobDetails = JSON.parse(document.getElementById("job").innerHTML);
+                    var jobDiv = document.getElementById("job-tile")
+                    jobDiv.innerHTML += `<div class="match-tile-title">
+                            ` + jobDetails[0].Title + `
+                        </div>
+                        <br />
+                        <div class="match-info">
+                            <p><b> Company Name: </b> ` + jobDetails[0].Name + ` </p>
+                            <p><b>Description:</b> ` + jobDetails[0].Description + `</p>
+                            <p><b>Annual Compensation:</b> ` + jobDetails[0].Annual_compensation + ` </p>
+                            <p><b>Required Skills:</b> ` + jobDetails[0].Required_skills + ` </p>
+                            <p><b>Domain:</b> ` + jobDetails[0].Category + ` </p>
+                        </div>`
+
+                    console.log("STUDENT --------------> ", studentDetails)
+                    console.log("JOB --------------> ", jobDetails)
+                },
+                error: function(response) {
+                    alert("Error saving data")
+                }
+            });
+    }
+
+    function match() {
+        const studentId = window.localStorage.getItem('studentId')
+        const jobId = window.localStorage.getItem('jobId');
+        console.log(studentId,jobId)
+
+        const dict_values = JSON.stringify({studentId, jobId})
+        $.ajax({
+                url: "/match_student_jobs",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(dict_values),
+                success: function(response) {
+                    console.log(response)
+                    document.write(response)
+                    location.href = 'adminHome'
+                },
+                error: function(response) {
+                    alert("Error saving data")
+                }
+            });
+    }
+
+    function adminLogout() {
+        window.localStorage.clear();
+        location.href = 'home'
+    }
+</script>
+
+</html>

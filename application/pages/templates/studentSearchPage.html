@@ -1,0 +1,240 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../static/styles/admin.css">
+    <!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/results.css') }}"/> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-buttons-class">
+            <div>
+                <button type="button" class="btn pull-right head-btn">Logout</button>
+            </div>
+        </div>
+        <div class="header-title">
+            GATORJOBS
+        </div>
+        <!-- <div class="header-subtitle">
+                Helping students find their dream jobs...
+            </div> -->
+    </div>
+    <div class="admin-body">
+        <div class="welcome">
+            <h2>
+                WELCOME STUDENT!
+            </h2>
+        </div>
+        <br />
+        <div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item active">
+                    <a class="nav-link active" id="jobs-tab" data-toggle="tab" href="#jobs" role="tab" aria-controls="jobs"
+                        aria-selected="true">SEARCH JOBS</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane active" id="jobs" role="tabpanel" aria-labelledby="jobs-tab">
+                    <div class="col-md-12">
+                        <div class="dropdown col-md-4">
+                            <select class="dropdown-menu-style" id="jobDomainDropdown"
+                                style="height: 35px;border-radius: 5px;">
+                                <option disabled selected>FILTER BY DOMAIN</option>
+                                <option>Artificial Intelligence and Machine Learning</option>
+                                <option>Robotic Process Automation (PA)</option>
+                                <option>Edge Computing</option>
+                                <option>Quantum Computing</option>
+                                <option>Virtual Reality and Augmented Reality</option>
+                                <option>Blockchain</option>
+                                <option>Internet of Things (loT)</option>
+                                <option>5G</option>
+                                <option>Cyber Security</option>
+                            </select>
+                        </div>
+                        <div class="input-menu-style col-md-4">
+                            <input type="text" class="form-control" id="jobSkills" aria-describedby="jobSkills"
+                                placeholder="FILTER BY SKILLS">
+                        </div>
+                        <div class="dropdown col-md-3">
+                            <button class="btn btn-secondary dropdown-menu-style" type="button" id="jobProfileDropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                FILTER BY JOB TITLE <i class="fa-solid fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="jobProfileDropdown">
+                                <li><a class="dropdown-item" href="#">Software Engineer</a></li>
+                                <li><a class="dropdown-item" href="#">Accountant</a></li>
+                                <li><a class="dropdown-item" href="#">Tester</a></li>
+                                <li><a class="dropdown-item" href="#">Maintainence Engineer</a></li>
+                                <li><a class="dropdown-item" href="#">Network Engineer</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1">
+                            <button class="btn head-btn" onclick="searchJobs()">Search</button>
+                        </div>
+                    </div>
+                    <br /> <br /><br />
+                    <div class="students-result col-md-12">
+                        Showing results of filtered jobs:
+                        <div id="jobs-list-all">
+                        </div>
+                        <div id="jbs" class="jbs" style="display: none;">
+                            {{jbs}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+    </div>
+    <div class="footer">
+        <p class="text-center">
+            This website is the intellectual property of Team 5
+        </p>
+    </div>
+</body>
+
+<script>
+
+    var s = [{
+        "studentId": "123",
+        "studentName": "David Jackson",
+        "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "degree": "Graduate",
+        "GPA": "3.8",
+        "domain": "AI/ML"
+    }, {
+        "studentId": "456",
+        "studentName": "John Doe",
+        "objective": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "degree": "Under Graduate",
+        "GPA": "3",
+        "domain": "Cyber Security"
+    }]
+
+    var j = [{
+        "jobId": "100",
+        "title": "Senior Software Engineer",
+        "companyName": "Microsoft",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "annualCompensation": "1.2M",
+        "skills": "Java",
+        "domain": "AI/ML"
+    }, {
+        "jobId": "200",
+        "title": "Network Engineer",
+        "companyName": "Apple",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "annualCompensation": "80K",
+        "skills": "Python",
+        "domain": "Cyber Security"
+    }]
+
+    var jobList
+
+    window.onload = function () {
+        window.localStorage.clear();
+        getData();
+    }
+
+    function getData() {
+        $.ajax({
+            url: "/get_data_for_admin",
+            type: "POST",
+            contentType: "application/json",
+            success: function (response) {
+                console.log(response)
+                window.document.write(response)
+                // studentList = response
+                jobList = JSON.parse(document.getElementById("jbs").innerHTML);
+
+                for (let j = 0; j < jobList.length; j++) {
+                    var jobs = document.getElementById("jobs-list-all")
+                    jobs.innerHTML += `
+                    <div class="student-list">
+                        <div class="student-title">
+                            `+ jobList[j].Title +`
+                            <button class="btn pull-right head-btn" onclick="selectJob(`+ jobList[j].Job_ID+`)">Select</button>
+                        </div>
+                        <br />
+                        <div class="student-info">
+                            <p><b>Company Name:</b> `+ jobList[j].Name +`</p>
+                            <p><b>Description:</b> `+ jobList[j].Description +`</p>
+                            <p><b>Annual Compensation:</b> `+ jobList[j].Annual_compensation +`</p>
+                            <p><b>Required Skills:</b> `+ jobList[j].Required_skills +`</p>
+                            <p><b>Domain:</b> `+ jobList[j].Category +` </p>
+                        </div>
+                    </div>
+                    `
+                }
+            },
+            error: function (response) {
+                console.log("Error getting data")
+            }
+        });
+    }
+
+    // POPULATE DATA 
+
+
+    function selectJob(id) {
+        window.localStorage.removeItem('studentId')
+        window.localStorage.setItem('jobId', id);
+        location.href = "adminStudent"
+    }
+
+    function isEmpty(val) {
+        return (val === undefined || val == null || val.length <= 0) ? true : false;
+    }
+
+
+    function searchJobs() {
+        const domain = document.getElementById("jobDomainDropdown").value
+        const skill = document.getElementById("jobSkills").value
+        const profile = document.getElementById("jobProfileDropdown").value
+        console.log(domain)
+        console.log(skill)
+        console.log(profile)
+
+        if (isEmpty(domain) || isEmpty(skill) || isEmpty(profile)) {
+            alert("Please enter values for all filters")
+        } else {
+            var dict_values = { domain, skill, profile }
+            var studentParams = JSON.stringify(dict_values)
+            $.ajax({
+                url: "/filterJobData",
+                type: "POST",
+                contentType: "application/json",
+                success: function (response) {
+                    console.log(response)
+                    window.document.write(response)
+                    jobList = response
+                },
+                error: function (response) {
+                    console.log("Error getting data")
+                }
+            });
+        }
+    }
+
+
+
+</script>
+
+</html>
