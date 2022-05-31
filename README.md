@@ -1,5 +1,5 @@
 # GatorJobs
- Web-based application that allows San Francisco State students to find their career paths in tech
+ Web-based application that allows San Francisco State students to find their career paths in tech.
 #  GatorJobs Home Page
 ![GatorJobs Home](https://user-images.githubusercontent.com/41343085/171302349-ccec6aa5-8c2a-4c9f-b315-a49318602312.png)
 #  GatorJobs Student Log In 
